@@ -1,0 +1,115 @@
+\documentclass[a4paper,12pt]{article} % Tipo de documento y tamaño de letra
+\usepackage[utf8]{inputenc} % Para que reconozca caracteres especiales como tildes
+\usepackage[spanish]{babel} % Para definir el idioma y el formato de fechas en español
+\usepackage{amsmath, amssymb} % Paquetes para símbolos y ecuaciones avanzadas
+\usepackage{ragged2e}
+
+
+
+\title{Actividad 1} 
+\author{Liz Ángel Núñez Torres} 
+\date{\today} 
+
+\begin{document}
+
+\maketitle 
+
+
+\section{Ejercicio.} % Comienza una nueva sección
+
+\begin{justify}
+Realiza la sustitución de la ecuación 2 en la ecuación 3 para llegar a obtener una expresión de \(\theta(r)\).
+Una vez conseguida la ecuación de \(\theta(r)\), despeja r en función de \(\theta\), para obtener así r.
+\end{justify}
+\begin{justify}
+Continua ahora empleando la ecuación 1, para obtener una expresión de \(r(\theta)\)
+dependiente de las variables iniciales del problema \(v_1,v_2,t_c\).
+\end{justify}
+\begin{justify}
+Esta última ecuación que has obtenido (ecuación 4) será la que empleemos más adelante para dibujar gráficamente la parte no lineal del recorrido
+\end{justify}
+
+\vspace{\baselineskip}
+
+\begin{enumerate}
+    \item \( D = \frac{v_1v_2t_c}{v_2-v_1} \)
+    \item \(r\left(t\right)=v_1\left(t-t_i\right) + D \)
+    \item \(\theta\left(t\right)=\sqrt{\left(\frac{v_2}{v_1}\right)^2 -1} \; ln\left(1+\frac{v_1\left(t-t_i\right)}{D}\right)\)
+\end{enumerate}
+
+\vspace{\baselineskip}
+
+\section{ Expresión \(\theta\left(r\right)\)}
+
+\vspace{\baselineskip}
+
+\begin{justify}
+    Tomaremos la \textit{ecuación 2} para obtener la expresiónque se adecua en nuestra \textit{ecuación 3}.
+\end{justify}
+
+
+\vspace{\baselineskip}
+
+\(r\left(t\right)=v_1\left(t-t_i\right)+D\)  \( \Rightarrow \) \( \frac{r(t)}{D} = \frac{v_1\left(t-t_i\right)}{D} + \frac{D}{D} \) \( \Rightarrow \) \(\frac{r(t)}{D} - 1 = \frac{v_1\left(t-t_i\right)}{D} \)
+
+\vspace{\baselineskip}
+
+\begin{justify}
+Obteniendo la siguiente expresión:
+
+\[
+\boxed{\frac{r(t)}{D} - 1 = \frac{v_1\left(t-t_i\right)}{D}}
+\]
+\end{justify}
+
+\vspace{\baselineskip}
+\begin{justify}
+Que sustituiremos en la \textit{ecuación 3} para obtener \(\theta(r)\).
+\end{justify}
+
+\vspace{\baselineskip}
+
+\(\theta\left(t\right)=\sqrt{\left(\frac{v_2}{v_1}\right)^2 -1} \; ln\left(1+\frac{r(t)}{D} - 1\right)\) \(\Rightarrow\) \(\theta\left(t\right)=\sqrt{\left(\frac{v_2}{v_1}\right)^2 -1} \; ln\left(\frac{r(t)}{D}\right)\)
+
+\vspace{\baselineskip}
+
+\section{Despejar \( r \) en función de \(\theta\).}
+
+\vspace{\baselineskip}
+\(\theta=\sqrt{\left(\frac{v_2}{v_1}\right)^2 -1} \; ln\left(\frac{r}{D}\right)\) \(\Rightarrow\) \(\frac{\theta}{\sqrt{\left(\frac{v_2}{v_1}\right)^2 -1}} = ln\left(\frac{r}{D}\right) \) \( \Rightarrow \) \(e^{\frac{\theta}{\sqrt{\left(\frac{v_2}{v_1}\right)^2 -1}}} = \frac{r}{D} \)
+
+\vspace{\baselineskip}
+
+\begin{justify}
+    Llegando a la siguiente ecuación:
+\end{justify}
+
+\[
+\boxed{r = D \cdot e^{\frac{\theta}{\sqrt{\left(\frac{v_2}{v_1}\right)^2 -1}}} }
+\]
+
+
+\section{Expresión de r(\(\theta\)). }
+
+\vspace{\baselineskip}
+
+\begin{justify}
+    Para este punto, recordamos la \textit{ecuación 1} y la \textit{ecuación r}.
+\end{justify}
+\begin{itemize}
+    \item \( D = \frac{v_1v_2t_c}{v_2-v_1} \)
+    \item \(r = D \cdot e^{\frac{\theta}{\sqrt{\left(\frac{v_2}{v_1}\right)^2 -1}}} \)
+\end{itemize}
+
+\begin{justify}
+    Como podemos observar, podemos sustituir y obtener \( r(\theta) \) en términos de las variables iniciales de la \textit{ecuación 1}.
+\end{justify}
+\vspace{\baselineskip}
+
+\[
+\boxed{r(\theta) = \frac{v_1v_2t_c}{v_2-v_1} \cdot e^{\frac{\theta}{\sqrt{\left(\frac{v_2}{v_1}\right)^2 -1}}} }
+\]
+
+
+\end{document}
+
