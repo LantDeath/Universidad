@@ -1,9 +1,9 @@
 # Fdb version 4
-["pdflatex"] 1736765158.84989 "c:/Users/Liz/Desktop/Física I/Actividad 2/Act_Grupal.tex" "Act_Grupal.pdf" "Act_Grupal" 1736765159.41045 0
-  "Act_Grupal.aux" 1736765159 928 f7a55cb1f99df28060dd39fbc077a5c7 "pdflatex"
-  "Act_Grupal.tex" 1736765158 11606 3999b80d00efb555359369038ef1a0c3 ""
-  "Bloque a.jpg" 1736762018 13003 533b029c64f676d5fc7d7e3b6731ee08 ""
-  "Bloque b.jpg" 1736751041 13452 764c16c8647f5b33152550d8e914e95d ""
+["pdflatex"] 1736804652.1681 "c:/Users/Liz/Desktop/Física I/Actividad 2/Act_Grupal.tex" "Act_Grupal.pdf" "Act_Grupal" 1736804652.77379 0
+  "Act_Grupal.aux" 1736804652 1154 3dc01bedf1e07d840e53f13312153285 "pdflatex"
+  "Act_Grupal.tex" 1736804651 13206 e6864b696c8c0533777d52807949ce2c ""
+  "Bloque a.jpg" 1736768206 13003 533b029c64f676d5fc7d7e3b6731ee08 ""
+  "Bloque b.jpg" 1736768206 13452 764c16c8647f5b33152550d8e914e95d ""
   "C:/Users/Liz/AppData/Local/MiKTeX/fonts/map/pdftex/pdftex.map" 1730470408 1564848 5c3a1ed7a1019eb9b3dd0398b479d26f ""
   "C:/Users/Liz/AppData/Local/MiKTeX/miktex/data/le/pdftex/pdflatex.fmt" 1718392930 24224143 811c8fde0bdadd85aea9d866d273adda ""
   "C:/Users/Liz/AppData/Local/Programs/MiKTeX/fonts/tfm/public/amsfonts/cmextra/cmex7.tfm" 1233951848 1004 54797486969f23fa377b128694d548df ""
@@ -65,10 +65,11 @@
   "C:/Users/Liz/AppData/Local/Programs/MiKTeX/tex/latex/l3backend/l3backend-pdftex.def" 1704400941 30006 57b07afb710ee2f649c65cfbafda39c1 ""
   "C:/Users/Liz/AppData/Local/Programs/MiKTeX/tex/latex/ragged2e/ragged2e.sty" 1687525147 10085 3dececaeed388e31285c366e124c0c4e ""
   "C:/Users/Liz/AppData/Local/Programs/MiKTeX/tex/latex/tools/multicol.sty" 1700599895 32515 51caec75eda9c8890135f12f1a4eddc3 ""
-  "Diagrama de cuerpo libre.jpg" 1736708441 44816 db4c1f928f039a8c9436c73d94e4df27 ""
-  "Imagen actividad G.jpg" 1736692537 9682 f32b163bea0ca5c42d137a548e8b9396 ""
-  "Imagen2.jpg" 1736720051 8108 b916e770611945b29e3d10cba11e5094 ""
-  "c:/Users/Liz/Desktop/Física I/Actividad 2/Act_Grupal.tex" 1736765158 11606 3999b80d00efb555359369038ef1a0c3 ""
+  "Diagrama de cuerpo libre.jpg" 1736768206 44816 db4c1f928f039a8c9436c73d94e4df27 ""
+  "Imagen actividad G.jpg" 1736768206 9682 f32b163bea0ca5c42d137a548e8b9396 ""
+  "Imagen2.jpg" 1736768206 8108 b916e770611945b29e3d10cba11e5094 ""
+  "c:/Users/Liz/Desktop/Física I/Actividad 2/Act_Grupal.tex" 1736804651 13206 e6864b696c8c0533777d52807949ce2c ""
+  "problema 4.png" 1736769007 18559 978ea7b77c5b1faf519c7ccad5ac5f39 ""
   (generated)
   "Act_Grupal.aux"
   "Act_Grupal.log"
