@@ -135,20 +135,7 @@ INPUT .\Imagen2.jpg
 INPUT .\Imagen2.jpg
 INPUT .\Imagen2.jpg
 INPUT .\Imagen2.jpg
-INPUT .\Bloque b.jpg
-INPUT .\Bloque b.jpg
-INPUT .\Bloque b.jpg
-INPUT .\Bloque b.jpg
-INPUT .\Bloque b.jpg
-INPUT .\Bloque b.jpg
-INPUT .\Bloque b.jpg
-INPUT .\Bloque a.jpg
-INPUT .\Bloque a.jpg
-INPUT .\Bloque a.jpg
-INPUT .\Bloque a.jpg
-INPUT .\Bloque a.jpg
-INPUT .\Bloque a.jpg
-INPUT .\Bloque a.jpg
+INPUT C:\Users\Liz\AppData\Local\Programs\MiKTeX\fonts\tfm\jknappen\ec\tcrm1200.tfm
 INPUT .\problema 4.png
 INPUT .\problema 4.png
 INPUT .\problema 4.png
@@ -157,10 +144,16 @@ INPUT .\problema 4.png
 INPUT .\problema 4.png
 INPUT .\problema 4.png
 INPUT Act_Grupal.aux
+INPUT C:\Users\Liz\AppData\Local\MiKTeX\fonts\pk\ljfour\jknappen\ec\dpi600\tcrm1200.pk
+INPUT C:\Users\Liz\AppData\Local\MiKTeX\fonts\pk\ljfour\jknappen\ec\dpi600\tcrm1200.pk
 INPUT C:\Users\Liz\AppData\Local\Programs\MiKTeX\fonts\type1\public\amsfonts\cm\cmbx12.pfb
 INPUT C:\Users\Liz\AppData\Local\Programs\MiKTeX\fonts\type1\public\amsfonts\cm\cmbx12.pfb
+INPUT C:\Users\Liz\AppData\Local\Programs\MiKTeX\fonts\type1\public\amsfonts\cm\cmex10.pfb
+INPUT C:\Users\Liz\AppData\Local\Programs\MiKTeX\fonts\type1\public\amsfonts\cm\cmex10.pfb
 INPUT C:\Users\Liz\AppData\Local\Programs\MiKTeX\fonts\type1\public\amsfonts\cm\cmmi12.pfb
 INPUT C:\Users\Liz\AppData\Local\Programs\MiKTeX\fonts\type1\public\amsfonts\cm\cmmi12.pfb
+INPUT C:\Users\Liz\AppData\Local\Programs\MiKTeX\fonts\type1\public\amsfonts\cm\cmmi6.pfb
+INPUT C:\Users\Liz\AppData\Local\Programs\MiKTeX\fonts\type1\public\amsfonts\cm\cmmi6.pfb
 INPUT C:\Users\Liz\AppData\Local\Programs\MiKTeX\fonts\type1\public\amsfonts\cm\cmmi8.pfb
 INPUT C:\Users\Liz\AppData\Local\Programs\MiKTeX\fonts\type1\public\amsfonts\cm\cmmi8.pfb
 INPUT C:\Users\Liz\AppData\Local\Programs\MiKTeX\fonts\type1\public\amsfonts\cm\cmr12.pfb

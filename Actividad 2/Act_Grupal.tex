@@ -274,8 +274,9 @@
 
 \newpage
 
-\section*{Problema 3} % Comienza la tercera sección.
+\newpage
 
+\section*{Problema 3}
 \begin{figure}[h!]
     \centering
     \includegraphics[width=\textwidth]{Imagen2.jpg}
@@ -303,107 +304,97 @@
     \item Valor del ángulo que impediría el movimiento de los bloques. 
 \end{enumerate}
 
-\newpage
 
-\section*{Solución}
-
-\begin{justify}
-    \textbf{Hacemos el diagrama de cuerpo libre para el bloque \(m_B.\)}
-\end{justify}
-
-\begin{figure}[h!]
-    \centering
-    \includegraphics[width=\textwidth]{Bloque b.jpg}
-    \caption{DCL}
-\end{figure}
+\subsection*{Apartado 1}
 
 \begin{justify}
-    Del diagrama de cuerpo libre, aplicamos la segunda ley de Newton para las fuerzas que se efectuan en el plano en el eje de las abcisas.
-\end{justify}
-
-\[\Sigma F = m \cdot a.\]
-
-\begin{justify}
-    Donde tenemos que:
-\end{justify}
-
-\[T - \mu \cdot N_b - W_{bx} = m \cdot a. \]
-
-\[T - 0.3 \cdot \left(10 \cdot 9.81 \cdot \cos (50)\right) - 10 \cdot 9.81 \cdot \sin (50) = 10a.\]
-
-\[T - 18.91 - 75.1 = 10a.\]
-
-\textbf{(1)} \[ T - 94.01 = 10a.\]
-
-\newpage
-
-\begin{justify}
-    \textbf{Hacemos el diagrama de cuerpo libre para el bloque \(m_A\)}
-\end{justify}
-
-\begin{figure}[h!]
-    \centering
-    \includegraphics[width=\textwidth]{Bloque a.jpg}
-    \caption{DCL}
-\end{figure}
-
-\begin{justify}
-    Del diagrama de cuerpo libre, aplicamos la segunda ley de Newton para las fuerzas que se efectuan en el plano en el eje de las abcisas.
+    El sistema tiene dos bloques, \( A \) sobre el plano y \( B \) sobre el bloque \( A \). Las fuerzas en juego son:    
 \end{justify}
 
 \begin{justify}
-    Donde tenemos que:
+    Para el bloque \( A \):    
 \end{justify}
 
+\begin{itemize}
+    \item Peso \( F_{g_A} = M_A \cdot g \)
+    \begin{itemize}
+        \item Componente paralela al plano: \( F_{A,\parallel} = M_A \cdot g \cdot \sin(\theta) \)
+        \item Componente perpendicular al plano: \( F_{A,\perp} = M_A \cdot g \cdot \cos(\theta) \)
+    \end{itemize}
+    \item Normal que incluye el peso de \( M_B \): \( N = (M_A + M_B) \cdot g \cdot \cos(\theta) \)
+    \item Fricción: \( F_f = \mu \cdot N \)
+\end{itemize}
 
-\[W_{Ax} - T - \mu_1 - \mu_2 = - m\cdot a\]
+Para el bloque \( B \):
+\begin{itemize}
+    \item Ejerce fricción adicional sobre el bloque \( A \): \( F = \mu_2 \cdot M_B \cdot g \)
+\end{itemize}
 
-\begin{justify}
-    Hay que recordar, que la normal \(N_A\) es afectada no solo por el el peso del bloque \(m_A\), si no que también por el peso del bloque \(m_B.\)
-\end{justify}
+La fuerza neta que genera aceleración en el sistema es la suma de las fuerzas paralelas al plano menos las de fricción. Por lo tanto, la aceleración es:
 
-\[N_A = \left(m_B + m_A\right) \cdot g \cdot \cos (50) = 189.1\;N\]
+\[
+F_{\text{tot}} = M_A \cdot g \cdot \sin(\theta) - \mu_1 \cdot (M_A + M_B) \cdot g \cdot \cos(\theta) - \mu_2 \cdot M_B \cdot g
+\]
 
-\begin{justify}
-    Haciendo las operaciones obtendremos:
-\end{justify}
+Como sabemos \( F = m \cdot a \), ergo:
 
-\[-T + 93.56 = 20a\]
+\[
+a = \frac{F_{\text{tot}}}{M_A + M_B}
+\]
 
-\begin{justify}
-    Igualando \(T\) tenemos:
-\end{justify}
+Sustituimos los valores dados:
+\[
+F_{A,\parallel} = 20 \cdot 9.8 \cdot 0.766 = 150.1 \, \text{N}
+\]
+\[
+F_f = 0.2 \cdot (20 + 10) \cdot 9.8 \cdot 0.643 = 37.8 \, \text{N}
+\]
+\[
+F_{f,2} = 0.3 \cdot 10 \cdot 9.8 = 29.4 \, \text{N}
+\]
 
-\[20a + 93.56 = 10a + 94.01 \Longrightarrow 94.01 - 93.56 = 20a - 10a\]
+Por tanto, la aceleración es:
 
-\[10a = 0.45 \Longrightarrow  a = \frac{0.45}{10} \Longrightarrow \boxed{a = 0.045 m/s^2}\]
+\[
+a = \frac{82.9}{20 + 10} \approx 2.76 \, \text{m/s}^2
+\]
 
+De lo que deducimos que es hacia abajo, ya que la fuerza neta es positiva en esa dirección.
 
-\begin{justify}
-    \textbf{(2)}
-\end{justify}
+\subsection*{Apartado 2}
+La distancia recorrida por el bloque \( A \) se puede calcular con la ecuación de movimiento rectilíneo uniformemente acelerado (MRUA) en la dirección paralela al plano inclinado:
 
-\begin{justify}
-    Para calcular el tiempo que tarda el centro del bloque \(B\) en llegar al borde vamos a usar la ecuación para un \textbf{movimiento rectilíneo uniformemente acelerado}  
-\end{justify}
-\[e = v_0 \cdot t + \frac{1}{2} \; a \cdot t^2\]
-\begin{justify}
-    Contamos con los datos:
-\end{justify}
+\[
+d = d_0 + v_0 t + \frac{1}{2} a t^2
+\]
 
-\begin{multicols}{2}
-    \(a = 0.045 m/s^2\)
-    
-    \(e = 0.50 m.\)
-\end{multicols}
+Por lo que, asumiendo que empieza en reposo, el tiempo que tarda \( B \), sabiendo su aceleración y la distancia que recorrerá \( A \), es:
 
-\begin{justify}
-    Obtenemos:
-\end{justify}
+\[
+t = \sqrt{\frac{2 \cdot 0.5}{2.76}} \approx 0.6 \, \text{s}
+\]
 
-\[t^2 = 0.5 - \frac{0.045}{2} \Longrightarrow \Longrightarrow t = \sqrt{} \]
+\subsection*{Apartado 3}
+El ángulo que haría que los bloques no se muevan es aquel que les dejará en equilibrio, es decir, que la fuerza neta sea \( 0 \). Por lo tanto, la fuerza de fricción debe ser igual a la componente paralela al plano inclinado:
 
-\newpage
+\[
+F_{A,\parallel} = F_{f,1} + F_{f,2}
+\]
+
+\[
+\tan(\theta) = \frac{\mu_1 \cdot (M_A + M_B) + \mu_2 \cdot M_B}{M_A}
+\]
+
+\[
+\tan(\theta) = \frac{0.2 \cdot (20 + 10) + 0.3 \cdot 10}{20} = 0.45
+\]
+
+Resolvemos y obtenemos que el ángulo que haría que el objeto se mantuviese inmóvil sería:
+
+\[
+\theta = \arctan(0.45) \approx 24.22^\circ
+\]
+
 
 \section*{Problema 4}
 
@@ -421,20 +412,242 @@
     \item Las velocidades del cuerpo en los puntos \(B, C, D\) y \(E\) si consideramos que el cuerpo perdió, al llegar al punto \(B\), el \(10\%\) de su energía mecánica.
 \end{enumerate}
 
+\subsection*{Apartado 1}
+El diagrama da la medida de cada tramo, no su altura, y un ángulo respecto a la horizontal, por lo que usaremos la fórmula:
+\[
+\Delta h = L \cdot \sin(\theta).
+\]
+Se sabe que:
+\begin{itemize}
+    \item $h_e = 0\,\mathrm{m}$,
+    \item $h_d = 300\,\mathrm{m}$,
+    \item $h_c = h_d + 32.5 \approx 332.5\,\mathrm{m}$ ya que $\theta_{c \to d} = 30^\circ$,
+    \item $h_b \approx 300\,\mathrm{m}$ ya que está por debajo de $C$ subiendo $50\,\mathrm{m}$ con ángulo de $40^\circ$,
+    \item $h_a \approx 473\,\mathrm{m}$ subiendo $200\,\mathrm{m}$ con ángulo $60^\circ$ desde $B$,
+    \item $h_0 = h_a$, por lo que $h_0 = 473\,\mathrm{m}$.
+\end{itemize}
 
-\newpage
+Con estos cálculos sabemos que el bloque parte de $h_0 = 473\,\mathrm{m}$ con una velocidad de $100\,\mathrm{m/s}$.
 
-\subsection*{Solución.}
+La energía mecánica se conserva en el sistema, por lo que la energía cinética inicial más la energía potencial inicial es igual a la energía cinética final más la energía potencial final.
 
+La energía inicial es:
+\[
+E_i = C_i + P_i,
+\]
+\[
+E_i = \frac{1}{2} m v_0^2 + m g h_0,
+\]
+\[
+E_i \approx \frac{1}{2} \cdot 100 \cdot 100^2 + 100 \cdot 9.8 \cdot 473,
+\]
+\[
+E_i = 500000\,\mathrm{J} + 463540\,\mathrm{J} = 963540\,\mathrm{J}.
+\]
 
+Para el tramo $0 \to A$:
+\[
+N = m \cdot g \cdot \cos(0) = 100 \cdot 9.8 \cdot 1 = 980\,\mathrm{N},
+\]
+\[
+F_f = \mu \cdot N = 0.1 \cdot 980 = 98\,\mathrm{N},
+\]
+\[
+W_f = 98 \cdot 100 = 9800\,\mathrm{J},
+\]
+\[
+E_a = E_i - W_f = 963540 - 9800 = 953740\,\mathrm{J},
+\]
+\[
+E_p = 100 \cdot 9.8 \cdot 473 = 463540\,\mathrm{J},
+\]
+\[
+E_c = E_a - E_p,
+\]
+\[
+E_c = 953740 - 463540 = 490200\,\mathrm{J},
+\]
+\[
+490200 = \frac{1}{2} m v^2,
+\]
+\[
+v = 99\,\mathrm{m/s}.
+\]
 
+Para el tramo $A \to B$:
+\[
+N = m \cdot g \cdot \cos(60) = 100 \cdot 9.8 \cdot 0.5 = 490\,\mathrm{N},
+\]
+\[
+F_f = \mu \cdot N = 0.2 \cdot 98 = 98\,\mathrm{N},
+\]
+\[
+W_f = F_f \cdot \text{dist}_{A \to B} = 98 \cdot 200 = 19600\,\mathrm{J},
+\]
+\[
+\Delta E_p = m g (h_b - h_a) = 100 \cdot 9.8 \cdot (300 - 473) = -169540\,\mathrm{J},
+\]
+\[
+E_b = E_a + \Delta E_p - W_f = 953740 - 169540 - 19600 = 764600\,\mathrm{J},
+\]
 
+\[
+E_{pb} = 100 \cdot 9.8 \cdot 300 = 294000\,\mathrm{J},
+\]
 
+\[
+E_{cb} = E_b - E_{pb} = 764600 - 294000 = 470600\,\mathrm{J},
+\]
+\[
+E_{cb} = 470600 = \frac{1}{2} m v^2,
+\]
+\[
+v = 97\,\mathrm{m/s}.
+\]
 
+Para el tramo $B \to C$:
+\[
+N = m \cdot g \cdot \cos(30) = 100 \cdot 9.8 \cdot 0.866 = 750.72\,\mathrm{N},
+\]
+\[
+F_f = \mu \cdot N = 0.15 \cdot 750.72 = 112.60\,\mathrm{N},
+\]
+\[
+W_f = 112.60 \cdot 50 = 5630.43\,\mathrm{J},
+\]
+\[
+\Delta E_p = m g (h_c - h_b) = 100 \cdot 9.8 \cdot (332.5 - 300) = 31850\,\mathrm{J},
+\]
+\[
+E_c = E_b + \Delta E_p - W_f = 764600 + 31850 - 5630.43 = 790819.57\,\mathrm{J},
+\]
+\[
+E_{pc} = 100 \cdot 9.8 \cdot 332.5 = 325850\,\mathrm{J},
+\]
+\[
+E_{cc} = E_c - E_{pc} = 790819.57 - 325850 = 464969.57\,\mathrm{J},
+\]
+\[
+E_{cc} = 464969.57 = \frac{1}{2} m v^2,
+\]
+\[
+v = \sqrt{\frac{2 \cdot E_{cc}}{m}},
+\]
+\[
+v = 96.43\,\mathrm{m/s}.
+\]
 
-\vspace{\baselineskip}
+Para el tramo $C \to D$:
+\[
+N = m \cdot g \cdot \cos(30) = 100 \cdot 9.8 \cdot 0.866 = 848.70\,\mathrm{N},
+\]
+\[
+F_f = \mu \cdot N = 0.25 \cdot 848.70 = 212.17\,\mathrm{N},
+\]
+\[
+W_f = 212.17 \cdot 65 = 13791.45\,\mathrm{J},
+\]
+\[
+\Delta E_p = m g (h_d - h_c) = 100 \cdot 9.8 \cdot (300 - 332.5) = -31850\,\mathrm{J},
+\]
+\[
+E_d = E_c + \Delta E_p - W_f = 790819.57 - 31850 - 13791.45 = 745178.12\,\mathrm{J},
+\]
+\[
+E_{pd} = 100 \cdot 9.8 \cdot 300 = 294000\,\mathrm{J},
+\]
+\[
+E_{cd} = E_d - E_{pd} = 745178.12 - 294000 = 451178.12\,\mathrm{J},
+\]
+\[
+E_{cd} = 451178.12 = \frac{1}{2} m v^2,
+\]
+\[
+v = \sqrt{\frac{2 \cdot E_{cd}}{m}},
+\]
+\[
+v = 94.99\,\mathrm{m/s}.
+\]
 
-\hspace{0.5 cm}
+Para el tramo $D \to E$ es una caída vertical sin rozamiento:
+\[
+\Delta E_p = m \cdot g \cdot (h_e - h_d) = 100 \cdot 9.8 \cdot 300 = -294000\,\mathrm{J},
+\]
+\[
+E_e = E_d + \Delta E_p = 745178.12 - 294000 = 451178.12\,\mathrm{J}.
+\]
+Como la altura es 0, la energía potencial final es 0 y la energía cinética final es la energía mecánica final, por lo que:
+\[
+E_{ce} = 451178.12,
+\]
+\[
+E_{ce} = \frac{1}{2} m v^2,
+\]
+\[
+v = \sqrt{\frac{2 \cdot E_{ce}}{m}},
+\]
+\[
+v = 94.99\,\mathrm{m/s}.
+\]
 
+\subsection*{Apartado 2}
+Considerando que la energía mecánica se conserva, todas se verán afectadas de igual manera y se reducirán en un 10\%, por lo que podríamos repetir los cálculos para energías 10\% menores a partir de $b$:
+\[
+E_{b2} = 0.9 E_b.
+\]
+Por lo que tendremos que revisar y aplicar la corrección:
 
+Corrección de $b \to c$:
+\[
+E_b = E_a + \Delta E_p - W_f = 953740 - 169540 - 19600 = 764600\,\mathrm{J},
+\]
+\[
+E_{b2} = 0.9 E_b = 688140\,\mathrm{J},
+\]
+\[
+E_{p \; c2} = 100 \cdot 9.8 \cdot 332.5 = 325850\,\mathrm{J},
+\]
+\[
+E_{c \; c2} = E_{b2} - E_{pb} = 688140 - 325850 = 362290\,\mathrm{J},
+\]
+\[
+E_{c \; c2} = \frac{1}{2} m v^2,
+\]
+\[
+v_{c2} = \sqrt{\frac{2 \cdot E_{c \; c2}}{m}},
+\]
+\[
+v_{c2} = 85.12\,\mathrm{m/s}.
+\]
+
+Corrección de $c \to d$:
+\[
+E_{d2} = E_{c2} + \Delta E_p - W_f = 688140 - 31850 - 13791.45 = 642498.55\,\mathrm{J},
+\]
+\[
+E_{pd} = 100 \cdot 9.8 \cdot 300 = 294000\,\mathrm{J},
+\]
+\[
+E_{cd} = E_{d2} - E_{pd} = 642498.55 - 294000 = 348498.55\,\mathrm{J},
+\]
+\[
+E_{cd} = \frac{1}{2} m v^2,
+\]
+\[
+v = \sqrt{ \frac{2 \cdot E_{cd}}{m}},
+\]
+\[
+v = 83.48\,\mathrm{m/s}.
+\]
+
+Corrección de $d \to e$:
+\[
+E_{e2} = E_{d2} + \Delta E_p = 642498.55 - 294000 = 451178.12\,\mathrm{J},
+\]
+\[
+v = \sqrt{\frac{2 \cdot E_{cd}}{m}},
+\]
+\[
+v = 83.48\,\mathrm{m/s}.
+\]
 \end{document}
