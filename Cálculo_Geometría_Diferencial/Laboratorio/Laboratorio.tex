@@ -1,0 +1,449 @@
+\documentclass[letterpaper]{article}
+
+\title{LABORATORIO MATLAB }
+\author{Liz Ángel Núñez Torres}
+
+\usepackage{amsfonts}
+\usepackage{amsmath}
+\usepackage{xcolor}
+\usepackage{float}
+\usepackage{graphicx}
+\usepackage{amssymb}
+\usepackage{multicol}
+\usepackage[spanish]{babel}
+\usepackage{hyperref}
+\usepackage{ragged2e}
+\usepackage{ulem}
+\usepackage{mathrsfs}
+\usepackage{verbatim}
+\usepackage{listings}
+
+\begin{document}
+
+\begin{titlepage}
+    \maketitle
+\end{titlepage}
+
+\begin{justify}
+    \textbf{Preparación de datos y funciones.}
+\end{justify}
+\begin{enumerate}
+    \item Definir la función a explorar.
+    \item Definir el conjunto de \(x\) a definir.
+    \item Utiliza MATLAB para definir funciones.
+\end{enumerate}
+
+\vspace{\baselineskip}
+
+\begin{justify}
+\textbf{Definir funciones:}    
+\end{justify}
+\begin{justify}
+    Hemos definido las siguientes funciones en nuestro editor:
+\end{justify}
+\begin{itemize}
+    \item " trigo "  donde calcularemos el seno y coseno de los valores que queramos analizar. 
+\end{itemize}
+\begin{figure}[H]
+    \centering
+    \includegraphics[scale=0.6]{trigo.PNG}
+    \caption{Función \textbf{trigo} Tomada de MATLAB }    
+\end{figure}
+\begin{itemize}
+    \item " miFuncion " función donde tenemos un polinomio. 
+\end{itemize}
+\begin{figure}[H]
+    \centering
+    \includegraphics[scale=0.6]{miFuncion.PNG}
+    \caption{Función \textbf{miFuncion} Tomada de MATLAB }    
+\end{figure}
+\newpage
+\begin{itemize}
+    \item " Lfuncion " función donde tenemos un nuevo polinomio. 
+\end{itemize}
+\begin{figure}[H]
+    \centering
+    \includegraphics[scale=0.6]{Lfuncion.PNG}
+    \caption{Función \textbf{Lfuncion} Tomada de MATLAB }    
+\end{figure}
+
+\vspace{\baselineskip}
+
+\begin{justify}
+    Ahora que hemos definido nuestras funciones, vamos a evaluarlas con diferentes valores.
+\end{justify}
+\begin{figure}[H]
+    \centering
+    \includegraphics[scale=0.6]{Valores.PNG}        
+\end{figure}
+\begin{justify}
+    Como podemos apreciar, en la función \textit{" miFuncion "} hemos evaluado el seno y coseno con la función \textit{ " trigo "} para valores de \(x=5\).
+\end{justify}
+\begin{justify}
+   Después hemos evaluado en nuestra función \textit{" Lfuncion "} con valores de \(x = 3\).
+\end{justify}
+
+\vspace{\baselineskip}
+
+\textbf{Cálculos Básicos.}
+\begin{enumerate}
+    \item Utiliza las funciones definidas y las funciones apropiadas de Matlab para
+    calcular derivadas y sus gráficas, la integral en un rango del dominio de
+    terminado, el área de la región acotada por la gráfica seleccionada, el eje \(y=0\)
+    y dos valores apropiados \(x_0\),\(x_1\) que acoten la región.
+
+    \item Utiliza las funciones de MATLAB, derivadas (diff) de diversos órdenes,
+    para encontrar la segunda y tercera derivada de la función seleccionada.
+
+    \item Verifica los resultados con cálculos a mano o utilizando herramientas de
+    cálculo simbólico si es posible.
+\end{enumerate}
+
+\vspace{\baselineskip}
+
+\begin{itemize}
+    \item Vamos a desarrollar nuestro primer punto.
+\end{itemize}
+\begin{figure}[H]
+    \centering
+    \includegraphics[scale=0.6]{deriv.PNG}        
+\end{figure}
+\begin{justify}
+    Hemos calculado las derivadas de nuestras dos funciones \textit{" miFuncion "} y \textit{" Lfuncion "} para a continuación
+    definir estas derivadas.
+\end{justify}
+\begin{multicols}{2}
+    \textbf{Función:}
+
+    \textbf{Derivada:}
+\end{multicols}
+\begin{multicols}{2}
+    \textit{miFuncion}
+
+    \textit{miDerivada}   
+\end{multicols}
+\begin{multicols}{2}
+    \textit{Lfuncion}
+
+    \textit{Lderivada}   
+\end{multicols}
+
+\vspace{\baselineskip}
+\newpage
+
+\begin{justify}
+    Después de identificar nuestras derivadas como \textit{" miDerivada "} y \textit{" Lderivada "} vamos
+    a transformarlas en funciones anónimas; de esta forma al llamar las mismas, MATLAB las podrá reconocer como númericas y 
+    no como variables simbólicas.
+\end{justify}
+\begin{figure}[H]
+    \centering
+    \includegraphics[scale=0.6]{anonima.PNG}        
+\end{figure}
+\begin{justify}
+    Una vez con estos parámetros establecidos podemos olvidarnos de las derivadas y proceder a graficar ambas funciones.
+\end{justify}
+\begin{figure}[H]
+    \centering
+    \includegraphics[scale=0.5]{Grafun.PNG}        
+\end{figure}
+
+\vspace{\baselineskip}
+\newpage
+\begin{justify}
+    En la siguiente imagen analizaremos las integrales en
+    el dominio de la función \textit{" miFuncion "} junto con el área de la región acotada por la gráfica que hemos obtenido anteriormente.
+\end{justify}
+\begin{figure}[H]
+    \centering
+    \includegraphics[scale=0.6]{area.PNG}        
+\end{figure}
+\begin{justify}
+   Es entonces cuando al obtener nuestros cálculos creamos variables simbólicas.
+\end{justify}
+
+\vspace{\baselineskip}
+
+\begin{justify}
+    En la siguiente imagen obtendremos \textbf{\(y=0\)}.
+\end{justify}
+\begin{figure}[H]
+    \centering
+    \includegraphics[scale=0.6]{raices.PNG}        
+\end{figure}
+\begin{justify}
+    Hemos obtenido las raíces de \(x\) para conocer los valores que hacen \(x =0\) y de esta manera
+    obtener \(y=0\)
+\end{justify}
+
+\vspace{\baselineskip}
+
+\begin{justify}
+ Para finalizar, obtendremos el punto de inflexión de la función que hemos venido desarrollando
+ y con este resultdo cálcularemos una integral en el intervalo \(x_0 , x_1\) que acote un área determinada de nuestra función.
+\end{justify}
+\begin{figure}[H]
+    \centering
+    \includegraphics[scale=0.6]{puntosx.PNG} 
+    \caption{Los valores \(t , p\) corresponden a \(x_0 , x_1 \) }       
+\end{figure}
+
+\vspace{\baselineskip}
+
+\begin{itemize}
+    \item En este punto cálcuraemos derivadas de diversas ordenes, para esto, crearemos una nueva función \textit{" granfuncion "}.
+\end{itemize}
+\begin{figure}[H]
+    \centering
+    \includegraphics[scale=0.6]{gfuncion.PNG}        
+\end{figure}
+\begin{justify}
+    A continuación, nuestras derivadas.
+\end{justify}
+\begin{figure}[H]
+    \centering
+    \includegraphics[scale=0.6]{derivas.PNG}        
+\end{figure}
+\begin{justify}
+    En la anterior gráfica hemos obtenido las derivadas una a una para ir definiendo las variables simbólicas como podemos apreciar.
+\end{justify}
+
+\vspace{\baselineskip}
+\newpage
+\begin{itemize}
+    \item En el último punto vamos a verificar nuestra derivada del anterior punto de la manera \( h^3(x) + j^3(x) + k^3(x) \) para evaluar nuestro anterior resultado. 
+\end{itemize}
+\begin{figure}[H]
+    \centering
+    \includegraphics[scale=0.6]{tercerord.PNG}        
+\end{figure}
+\begin{justify}
+    Es así, como evaluando la derivada de cada función de forma independiente, llegamos a la sumatoria de funciones derivadas de tercer orden y constatamos que obtenemos el mismo resultado que en el punto pasado.
+\end{justify}
+
+\vspace{\baselineskip}
+
+\textbf{VISUALIZACIÓN}
+\begin{itemize}
+    \item Utiliza la función plot de MATLAB para visualizar las funciones definidas.
+    \item Agrega etiquetas a los ejes, título y leyendas si es necesario.
+    \item Experimenta con diferentes estilos de líneas, colores y marcadores para
+    mejorar la visualización.
+    Agrega puntos de interés como mínimos, máximos, puntos de inflexión,
+etc., utilizando MATLAB para calcular estos puntos.
+\end{itemize}
+\vspace{\baselineskip}
+
+\begin{justify}
+    Este punto podemos resolverlo con el siguiente script.
+\end{justify}
+
+\vspace{\baselineskip}
+
+\begin{figure}[H]
+    \centering
+    \includegraphics[scale=0.6]{punto3.PNG}        
+\end{figure}
+
+\begin{justify}
+    Es entonces que obtenemos nuestras tres gráficas, la primera con \( y=0 \). Las otras funciones hemos modificado el color, las lineas y leyendas.
+\end{justify}
+
+\vspace{\baselineskip}
+\newpage
+\begin{justify}
+    \textbf{Las gráficas son las siguientes:}
+\end{justify}
+
+\begin{itemize}
+    \item \textbf{miFuncion}
+\end{itemize}
+\begin{figure}[H]
+    \centering
+    \includegraphics[scale=0.6]{fig1.PNG}        
+\end{figure}
+\begin{itemize}
+    \item \textbf{Lfuncion}
+\end{itemize}
+\begin{figure}[H]
+    \centering
+    \includegraphics[scale=0.6]{fig2.PNG}        
+\end{figure}
+
+\vspace{\baselineskip}
+
+\begin{itemize}
+    \item \textbf{granfuncion}
+\end{itemize}
+\begin{figure}[H]
+    \centering
+    \includegraphics[scale=0.6]{fig3.PNG}        
+\end{figure}
+
+\vspace{\baselineskip}
+
+
+\textbf{Curvas en el Plano}
+\begin{itemize}
+    \item Parametriza las curvas \( x^2+y^2=9 \) y \( y= x^2 \) en el intervalo \( [-4,4] \).
+    \item Utiliza MATLAB para graficar ambas curvas simultáneamente utilizando
+    \textit{plot}.
+    \item Calcula la recta tangentes y normales a las curvas en los puntos \( x = 0\) y \( x = 1/2 \) utilize el comando diff. Representelas gráficamente, puede usar
+    \textit{quiver} u otras funciones de visualización.
+\end{itemize}
+
+\vspace{\baselineskip}
+\newpage
+\begin{justify}
+    Vamos a desarrollar los dos puntos en la siguiente imagen, mostrando el proceso de parametrización en un intervalo cerrado junto con las gráficas de la circunferencia y la parabola
+\end{justify}
+\begin{figure}[H]
+    \centering
+    \includegraphics[scale=0.5]{para.PNG}        
+\end{figure}
+\vspace{\baselineskip}
+
+\begin{justify}
+Ahora  trazaremos las rectas tangentes y normales en los puntos \(x = 0\) y \(x = \frac{1}{2}\) en las funciones \textit{" miFuncion "} y
+\textit{" granfuncion "}.
+\end{justify}
+
+\vspace{\baselineskip}
+
+\begin{figure}[H]
+    \centering
+    \includegraphics[scale=0.5]{rec.PNG}        
+\end{figure}
+\vspace{\baselineskip}
+
+\begin{justify}
+    Si ampliamos la gráfica podemos ver que aunque parecian solapadas varias de nuestras rectas, estás se comportan de manera paralela la una de otra.
+\end{justify}
+
+\begin{figure}[H]
+    \centering
+    \includegraphics[scale=0.5]{sol.PNG}        
+\end{figure}
+\vspace{\baselineskip}
+
+\vspace{\baselineskip}
+
+\begin{justify}
+    \textbf{Superficies y Curvas en el espacio}
+\end{justify}
+\begin{itemize}
+    \item Considere el paraboloide hiperbólico \(z = y^2 - x^2\) para respresentar superficies en el espacio tridimensional y represéntalo gráficamente.
+    \item Utiliza funciones como \textit{surf} o \textit{mesh} para visualizar estas superficies.
+    \item Paramétrice la curva interseccion del paraboloide anterior con el plano
+    \(y=2\) y grafique esa curva.
+    \item Calcule el plano tangente a la superficie en el punto p(1, 2, 3).
+    \item Visualiza los vectores tangentes y normales utilizando quiver3 u otras
+    funciones de visualización en 3D. 
+\end{itemize}
+
+\vspace{\baselineskip}
+
+\begin{justify}
+    Vamos presentar el código \textbf{donde hemos aunado todos los puntos a analizar} en tres diferentes imagenes donde hemos distribuido todos los puntos
+    de manera lineal.
+\end{justify}
+
+\vspace{\baselineskip}
+\newpage
+\begin{justify}
+    \textbf{Representación del Paraboloide Hiperbólico , trazas en z = 0, y = 0, x = 0. }
+\end{justify}
+
+\begin{figure}[H]
+    \centering
+    \includegraphics[scale=0.4]{fi.PNG}        
+\end{figure}
+
+\vspace{\baselineskip}
+
+\begin{justify}
+    \textbf{ Parametrización de la curva de intersección con el plano Y = 2 y  Cálculo del plano Tangente en el Punto (1, 2, 3). }
+\end{justify}
+
+\begin{figure}[H]
+    \centering
+    \includegraphics[scale=0.4]{se.PNG}        
+\end{figure}
+
+\vspace{\baselineskip}
+\newpage
+\begin{justify}
+    \textbf{Visualización de Vectores Tangentes y Normales.}
+\end{justify}
+
+\begin{figure}[H]
+    \centering
+    \includegraphics[scale=0.4]{tri.PNG}        
+\end{figure}
+
+\vspace{\baselineskip}
+
+\begin{justify}
+    \textbf{Representación gráfica de todos los puntos}.
+\end{justify}
+
+\begin{figure}[H]
+    \centering
+    \includegraphics[scale=0.6]{Last.PNG}        
+\end{figure}
+
+\vspace{\baselineskip}
+\newpage
+\begin{justify}
+    \textbf{ Análisis Adicional}.
+\end{justify}
+\begin{itemize}
+    \item Realiza análisis adicionales según tus intereses. Por ejemplo, puedes explo-
+    rar la convergencia de series infinitas, solución de ecuaciones diferenciales,
+    optimización de funciones, etc.
+    \item Utiliza las herramientas de MATLAB adecuadas para estos análisis, como
+    \textit{sum}, \textit{ode45}, \textit{fmincon}, etc.
+\end{itemize}
+
+\vspace{\baselineskip}
+
+\begin{justify}
+    Para estos puntos opcionales hemos hecho una convergencia de serie infinita usando el comando \textit{sum}.
+\end{justify}
+\begin{figure}[H]
+    \centering
+    \includegraphics[scale=0.6]{conver.PNG}        
+\end{figure}
+
+\vspace{\baselineskip}
+\newpage
+\begin{justify}
+    Y para finalizar, hemos desarrollado un problema de Ecuaciones Diferenciales usando el comando \textit{ode45}.
+\end{justify}
+
+\begin{figure}[H]
+    \centering
+    \includegraphics[scale=0.6]{aca.PNG}        
+\end{figure}
+
+Siendo entonces, este el último punto de nuestras actividades.
+\begin{justify}
+Dejamos para finalizar, la imagen de todo nuestro MATLAB después de haber terminado cada uno de los puntos.
+\end{justify}
+\begin{figure}[H]
+    \centering
+    \includegraphics[scale=0.3]{ñ.PNG}        
+\end{figure}
+
+Gracias.
+
+
+
+
+
+
+
+
+\end{document}
+
+

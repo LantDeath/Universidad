@@ -1,0 +1,202 @@
+\documentclass[twocolumn]{article}
+\usepackage[utf8]{inputenc}
+\usepackage{abstract} % Para centrar el abstract
+\usepackage{multicol} % Para las dos columnas
+\usepackage{graphicx} % Para incluir gráficos (si es necesario)
+\usepackage{amsmath} % Para fórmulas matemáticas
+\usepackage{amsfonts} % Para fuentes adicionales en matemáticas
+\usepackage{amssymb} % Para símbolos adicionales en matemáticas
+\usepackage{hyperref} % Para enlaces y referencias
+\usepackage{ragged2e}
+\usepackage{float}
+\usepackage{hyperref}
+
+\title{Integral Definida.}
+\author{Liz' Ángel Núñez}
+\date{\today}
+
+\begin{document}
+
+\twocolumn[
+\maketitle
+
+\begin{onecolabstract}
+  
+Vamos a explicar y entender uno de los elementos más importante del cálculo, un concepto revolucionario que ha contribuido y mejorado significativamente la ciencias, ingenierías y tecnologías que nos rodean en el día a día. Por esto
+deduciremos la integral definida.
+\end{onecolabstract}
+\vspace{1cm}
+]
+
+
+\section{Introducción}
+\begin{justify}
+Siempre hemos mecanizado y utilizado métodos matemáticos sin preguntarnos realmente de donde surgen, la necesidad que ha llevado a la humanidad a crear diversas soluciones a distintos problemas físicos que enfrentamos en nuestro alrededor.
+\end{justify}
+\vspace{\baselineskip}
+\begin{justify}
+De este modo, nos perdemos una valiosa forma de apreciar el conocimiento que tenemos en la actualidad y su contexto real a problemas reales con los que estuvimos estancados por muchos años.
+\end{justify}
+\vspace{\baselineskip}
+\begin{justify}
+La forma más óptima para realmente saber algo más allá de las técnicas mnemotécnicas es aprender en un contexto, ejemplificando cada paso y concatenando aquella información para hacer una secuencia de sucesos mucho más naturales a la hora de tener que razonar 
+este conocimiento.
+\end{justify}
+\vspace{\baselineskip}
+\begin{justify}
+No obstante, estos ejemplos si son encausados en situaciones cotidianas, podemos enlazar mucho más fácil la explicación del tema y su contexto. Abogando por esto, usaremos imagenes que nos ayudarán dinamicamente para reflejar los resultados que queremos dar a conocer.
+\end{justify}
+\section{Metodología}
+
+   Es entonces cuando iniciamos con una pregunta que a simple vista parece inocua, sin embargo al abarcarla veremos como esta misma nos lleva a una incognita mayor.
+
+  \begin{justify}
+   Si un vehículo que va en \textit{M.R.U} con velocidad constante de \(6 \; \frac{m}{s}\) donde \(m = Metros\) y \(s= Segundos\) y ha recorrido \(10_s\) ¿Cómo podemos saber la distancia recorrida por medio de su gráfica?
+   
+  \end{justify}
+
+  \begin{figure}[H]
+    \centering
+    \includegraphics[width=0.4\textwidth]{vehiculo.PNG}
+    \caption{Geogebra -  Elaboración propia.}
+\end{figure}
+
+  \begin{justify}
+   La distancia recorrida por nuestro vehículo se encuentra con el producto de la velocidad por el tiempo \((6\;\frac{m}{s} \times 10_s = 60_m)\) pero si nos fijamos más en detalle, notamos que la intersección crea un rectángulo 
+   el cual al medir su área (\( A_R = b \times h = 60_m\)) donde \(A_R\) es el área del rectángulo, \(b\) representa la abscisa de la gráfica y \(h\) las ordenadas que hemos llamado (\textit{Velocidad - m/s} y \textit{Tiempo - Segs}), obteniendo el mismo resultado. 
+  \end{justify}
+ 
+  \begin{justify}
+    Llegamos a una conclusión muy importante, la distancia recorrida por el vehículo es igual al aréa bajo la gráfica de la función.
+  \end{justify} 
+   
+   \begin{justify}
+    Como ya sabemos, la realidad es menos uniforme que nuetro vehículo, por esto, al tener una función como la siguiente.
+   \end{justify}
+   
+   \begin{figure}[H]
+    \centering
+    \includegraphics[width=0.4\textwidth]{fun.PNG}
+    \caption{Geogebra - Elaboración propia.}
+\end{figure}
+
+   \begin{justify}
+    ¿Cómo podemos saber el área bajo la gráfica de esta función en los puntos \(a\) y \(b\)? para esto, vamos a aproximar el valor del área mediante una sumatoria de áreas que si conozcamos, como por ejemplo la figura geométrica usada con anterioridad, el rectángulo.
+    
+\end{justify}
+\section{Resultados}
+\begin{figure}[H]
+  \centering
+  \includegraphics[width=0.4\textwidth]{rec.PNG}
+  \caption{Geogebra - Elaboración propia.}  
+\end{figure}
+
+\begin{justify}
+  Hemos divido el intervalo \([a,b]\) en cinco intervalos con longitudes iguales que denominaremos \(\Delta _x\) es entonces cuando creamos en estos intervalos rectángulos cuya base sea igual a \(\Delta_x\)
+\end{justify}
+
+\begin{justify}
+  El valor aproximado del área bajo la curva será más o menos la suma de las áreas de los rectángulos. \[A \approx A_1 + A_2 +A_3 +A_4 +A_5 \]
+\end{justify}
+\begin{justify}
+  La base de cada rectángulo es \(\Delta_x\) sin embargo, no sabemos el valor de \(\Delta_x\), para encontrar su valor debemos hallar la distancia que hay entre los intervalos [\(a,b\)]. \[a - b = |a-b| \] Dado que queremos saber la distancia, calculamos el valor absoluto de la resta de los intervalos.
+ \[\Delta_x = \frac{|a-b| }{5}\] Por lo tanto, \(\Delta_x\) es el cociente de la distancia de los intervalos [\(a,b\)] y las longitudes de los cinco intervalos.
+\end{justify}
+
+\begin{justify}
+  Una vez tenemos la base de los rectángulos, debemos conocer la altura de los mismos.  
+\end{justify}
+
+\begin{figure}[H]
+  \centering
+  \includegraphics[width=0.4\textwidth]{al.PNG}
+  \caption{Geogebra - Elaboración propia.}  
+\end{figure}
+
+\begin{justify}
+  Para llegar a conocer la altura de los rectángulos debemos escoger un punto en cada uno de los intervalos y evaluar la altura correspondiente. Hemos escogido por comodidad los puntos a la derecha de cada intervalo, denominandolos (\(x_1,x_2,x_3,x_4,x_5\)) y sus correspondientes de altura  \(\left(f(x_1),f(x_2),f(x_3),f(x_4),f(x_5)\right)\)
+\end{justify}
+
+\begin{justify}
+  De esta forma, tenemos que: \[A_1=f(x_1)\Delta_x\ , A_2=f(x_2)\Delta_x, A_3=f(x_3)\Delta_x\]\[ A_4=f(x_4)\Delta_x,A_5=f(x_5)\Delta_x\]
+  Si reemplazamos el valor del área de cada uno de estos rectángulos en una expresión aproximada del área bajo la curva entre los intervalos [\(a,b\)] obtenemos una sumatoria del área de los rectángulos:
+  \[A\simeq f(x_1)\Delta_x + f(x_2)\Delta_x + f(x_3)\Delta_x + f(x_4)\Delta_x + f(x_5)\Delta_x \]
+\end{justify}
+
+\begin{justify}
+  Podemos expresar esta aproximación de la forma: \[A \simeq \sum_{i = 1}^{5}f(x_i)\Delta_x  \] Aunque hemos llegado a una aproximación del área bajo la gráfica en el intervalo [\(a,b\)] aún podemos mejorar esta aproximación contruyendo más rectángulos para obtener una sumatoria de áreas más aproximada al área del intervalo bajo la gráfica.
+\end{justify}
+
+\begin{figure}[H]
+  \centering
+  \includegraphics[width=0.4\textwidth]{n.PNG}
+  \caption{Geogebra - Elaboración propia.}  
+\end{figure}
+
+\begin{justify}
+  Como podemos apreciar en la \textit{figura 5} hemos contruido \(n\) rectángulos, con lo cual el valor de \(\Delta_x\) es \[\Delta_x = \frac{\left\lvert a - b \right\rvert }{n}\] Nuestra expresión del área se convertiria en 
+  \[A \simeq \sum_{i = 1}^{n}f(x_i)\Delta_x \] Dado que vamos creando \(n\) rectángulos, haremos que estos sean tantos que tiendan al infinito, con lo cual la longitud \( \Delta_x\) tendera a \(0.\) \[n \rightarrow \infty \; \, \; \; \; \Delta_x \rightarrow 0\]
+  Entonces el valor del área bajo la gráfica será \[A=\lim_{n \to \infty}\sum_{i = 1}^{n}f(x_i)\Delta_x  \] Exactamente, el valo real del área es igual a la suma de las áreas de los rectángulos cuando estos tienden a infinito y su base \(\Delta_x\) tiende a \(0\).
+  Esta expresión se conoce como \textbf{Suma de Riemann}.
+\end{justify}
+\begin{justify}
+  Hemos llegado al punto más trascendental, la integral definida, donde la expresión \( \int_{a}^{b}\) quiere decir que aplicamos la sumatoria de áreas desde el intervalo (\(a\)) hasta el intervalo (\(b\)). \[A=\lim_{n \to \infty}\sum_{i = 1}^{n}f(x_i)\Delta_x = \int_{a}^{b}f(x)dx\] 
+  Cabe resaltar que el símbolo \(dx\) que se llama \textit{Diferencial de x} no tiene un significado especial por si mismo, sino que hace parte de toda la expresión de la integral. Sin embargo, si podemos establecer una analogía entre \(\Delta_x\) y \(dx\). En este caso \(dx\) hace analogía con la longitud \(\Delta_x\) cuando esta tiende a cero, es decir, un valor muy pequeño.
+\end{justify}
+
+
+
+\section{Resultados}
+\begin{justify}
+  Hemos llegado al punto que queriamos demostrar, donde podemos encontrar el área bajo la gráfica usando la integral definida.
+\end{justify}
+\begin{justify}
+  Siempre que integremos implicitamente estamos realizando una suma de Riemann, donde vamos creando más y más rectángulos hasta llegar a un punto donde el número de rectángulos tiendan a infinito y estos conformen casi perfectamente el área que está bajo la gráfica
+\end{justify}
+
+\begin{figure}[H]
+  \centering
+  \includegraphics[width=0.4\textwidth]{k.PNG}
+  \caption{Geogebra - Elaboración propia.}  
+\end{figure}
+
+\begin{justify}
+  Como vemos en la anterior gráfica, hemos creado un número tan cuantioso de rectángulosque que son casi indistinguinbles, por esto mismo es que tenemos una aproximación casí perfecta del área estudidada en cada gráfica en un intervalo cerrado.
+\end{justify}
+
+\section{Conclusiones}
+
+\begin{justify}
+  Como dijimos al iniciar este artículo, la importancia de saber el contexto en el que nace este tipo de aplicaciones matemáticas a veces suelen ser más importantes que los simples cálculos que hacemos una y otra vez sin una noción real de la aplicación que estamos realizando. Por esto mismo es que entender la razón por la que
+  aplicamos estos cálculos nos ayudan no solo a entender la morfología de la misma, sino que creamos una serie de conocimientos donde podemos enfrentar diferentes problemas con una mayor conciencia para obtener resultados fidedignos.
+\end{justify}
+\begin{justify}
+  Podemos ahora aplicar siempre la integral definida con conocimiento de su aplicación y como esta nos ayuda en diferentes campos de la física, matemáticas e ingenierías y más, que ayudan a desarrollar diferentes tecnologías que catapultan la humanidad a nuevas respuestas, nuevas incognitas y nuevos horizontes donde podemos estudiar.
+\end{justify}
+\begin{justify}
+  Vamos a enumerar algunos campos donde la integral definida nos ha ayudado a obtener mejores resultados.
+\end{justify}
+\begin{itemize}
+  \item \textbf{Medicina y Farmacología.}
+  
+  Las integrales se utilizan para modelar la difusión y absorción de medicamentos en el cuerpo.
+
+  \item \textbf{Acústica.}
+  
+  Integrando la presión sonora respecto al tiempo, se puede determinar el nivel de presión sonora en un punto específico.
+
+  \item \textbf{Química.}
+  
+  Calcular la concentración total de reactivos o productos en una reacción química a lo largo del tiempo.
+
+  
+\end{itemize}
+\begin{thebibliography}{9}
+  \bibitem{autor2020} BlueDot (2023). ¿Qué es la integral?. \href{https://www.youtube.com/watch?v=y6YQSUDTzqE}{\textbf{Dirección}}
+  \bibitem{autor2020} Joaquín Bedia - Integral definida. Integral de Riemann. \href{https://ocw.unican.es/pluginfile.php/1897/course/section/1562/int.pdf}{\textbf{Dirección}}
+  \bibitem{autor2020} Open\textbf{stac} - La integral definida. \href{https://openstax.org/books/c%C3%A1lculo-volumen-1/pages/5-2-la-integral-definida}{\textbf{Dirección}}
+  \bibitem{autor2020} Matematicasvisuales - Integral definida. \href{https://www.matematicasvisuales.com/html/analisis/integral/integral.html}{\textbf{Dirección}}
+  \bibitem{autor2020} Universidad Nacional Autónoma de México - Relación entre la integral definida y la integral indefinida \href{https://portalacademico.cch.unam.mx/calculo2/la-integral-indefinida/relacion-entre-la-integral-definida-y-la-integral-indefinida}{\textbf{Dirección}}
+\end{thebibliography}
+
+\end{document}
