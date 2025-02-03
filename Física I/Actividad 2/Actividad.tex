@@ -1,0 +1,341 @@
+\documentclass[a4paper,12pt]{article} % Tipo de documento y tamaño de letra.
+\usepackage[utf8]{inputenc} % Para que reconozca caracteres especiales como tildes.
+\usepackage[spanish]{babel} % Para definir el idioma y el formato de fechas en español.
+\usepackage{amsmath, amssymb} % Paquetes para símbolos y ecuaciones avanzadas (Para hacer una ecuación con un recuadro).
+\usepackage{ragged2e} % Para justificar textos.
+\usepackage{multicol} % Para crear columnas.
+\usepackage{slashed} % Para generar números o variables canceladas (Una línea diagonal sobre el número o variable)
+\usepackage{graphicx} % Paquete para poner graficas.
+\usepackage{float} % Para poder dejar la imagen en un punto fijo del documento.
+\usepackage{longtable} % Para tablas largas.
+\usepackage{cancel} % Para hacer cancelaciones en medio de operaciones.
+
+
+\title{Electricidad y Magnetismo.} 
+\author{Liz Ángel Núñez Torres.} 
+\date{\today} 
+
+\begin{document}
+
+\maketitle 
+
+\section*{Ejercicio 1} % Comienza el primer ejercicio.
+
+
+\vspace{\baselineskip}
+
+
+\begin{justify}
+\textbf{Resumen de las analogías entre campos eléctricos y magnéticos:}
+\end{justify}
+
+\vspace{\baselineskip}
+
+\begin{longtable}{|c|c|}
+    
+    \hline
+    \textbf{Campo Eléctrico} &  \textbf{Campo Magnético} \\ \hline
+    \endfirsthead \hline
+
+    Columna 1 & Columna 2\\ \hline
+    \endhead
+
+    Es creado por \textbf{cargas} en reposo:  & Es creado por \textbf{cargas} en movimiento: \\ 
+
+    \textbf{Ley de Coulomb} \(F_e = K_e \frac{q_1 \; q_2 }{r^2}\). & \textbf{Fuerza de Lorentz} \(F_m = q (\vec{v} \times  \vec{B})\). \\ \hline
+
+    Cargas opuestas generan atracción.    &  Polos opuestos generan atracción. \\ \hline
+
+    Cargas iguales generan repulsión.    & Polos iguales generan repulsión.  \\ \hline
+
+    Las líneas de campo comienzan en cargas  & Las líneas de campo se generan por  \\ 
+
+    positivas y terminan en cargas negativas & bucles cerrados de sur a norte magnético\\ 
+
+    generando interacciones a distancia. & generando interacciones a distancia. \\ \hline
+
+    Su comportamiento en el campo es descrito &  Su comportamiento en el campo es descrito \\
+
+    por la ley de Gauss \(\oint E \cdot d A = \frac{Q}{\varepsilon _0} \) & por la ley de Gauss \(\oint B \cdot d A = 0\) \\ \hline
+
+    La permisividad eléctrica mide la respuesta & La permeabilidad magnética mide la \\
+
+    de un material al campo eléctrico, & respuesta de un material al campo magnético, \\
+
+    se representa por \((\epsilon)\) & se representa por \((\mu)\) \\ \hline 
+
+    Campo eléctrico variable  & Campo magnético variable \\ 
+
+    crea un campo magnético. & crea un campo eléctrico. \\ \hline 
+
+
+
+
+\end{longtable}
+
+
+
+\newpage
+
+\begin{justify}
+    \textbf{Resumen de las diferencias entre campos eléctricos y magnéticos:}
+\end{justify}
+
+\vspace{\baselineskip}
+
+\begin{longtable}{|c|c|}
+    
+    \hline
+    \textbf{Campo Eléctrico} &  \textbf{Campo Magnético} \\ \hline
+    \endfirsthead \hline
+
+    Columna 1 & Columna 2\\ \hline
+    \endhead
+
+    Las líneas son abiertas siendo las cargas & Las líneas son cerradas, saliendo del  \\
+
+    positivas fuentes y las negativas sumideros. & norte y entrando por el sur. \\ \hline
+
+    Cualquier partícula que entre al campo & Cualquier partícula que entre al campo\\
+
+    con velocidad paralela experimenta & con velocidad paralela no experimentará \\
+
+    una fuerza, y describe un movimiento & ninguna fuerza y su movimiento es \\ 
+
+    \textbf{MRUA} &  descrito por un \textbf{MRU} \\ \hline
+
+    Si una partícula entra con  & Si una partícula entra con \\
+
+    una velocidad perpendicular al campo, & una velocidad perpendicular al campo, \\
+
+    presentará un movimiento parabólico. &  presenterá un movimiento \textbf{MCU} \\ 
+
+    \; & en el plano perpendicular al campo. \\ \hline 
+
+    El flujo \textbf{no siempre es nulo}, según & El flujo \textbf{siempre es nulo}, según \\
+
+    la Ley de Gauss \(\oint \vec{E} \cdot d\vec{A}= \frac{Q_{int}}{\varepsilon_0}.\) & la Ley de Gauss \(\oint \vec{B} \cdot d \vec{A} = 0\). \\ \hline
+
+    El campo es conservativo & El campo \textbf{no} es conservativo \\ \hline 
+
+    \textbf{Existe} potencial eléctrico. & \textbf{No existe} potencial magnético. \\ \hline
+
+    Existen monopolos eléctricos. & \textbf{No} existen monopolos magnéticos. \\ \hline
+
+    Se genera por cargas en reposo. & Es generado por una carga en movmiento. \\ \hline
+\end{longtable}
+
+
+\section*{Ejercicio 2}
+
+\vspace{\baselineskip}
+
+\subsection*{Resuelve los siguientes ejercicios.}
+
+\vspace{\baselineskip}
+
+\begin{enumerate}
+    \item Calcula el campo eléctrico que crea una esfera, de radio \(R = 1m\) y densidad volumétrica de carga de \(5 \; C/m^3\) en un punto situado a \(10m\) de su centro.
+    \item Calcula el campo magnético que crea un conductor recto muy largo, por el que circula una intensidad de \(5 \; A\) en un punto situado a \(10 m\) del mismo (se puede suponer que el conductor recto es infinitamente largo).
+    \item Calcula la fuerza que crea el campo eléctrico calculado en \((1)\) sobre una carga de \(10 \; C\); y la fuerza que crea el campo magnético calculado en \((2)\) sobre una carga de \(10 \; C\) que se mueve a \(10 \; m/s\).
+\end{enumerate}
+
+\subsection*{Solución de los ejercicios.}
+
+\vspace{\baselineskip}
+
+\subsection*{Punto 1.}
+
+\vspace{\baselineskip}
+
+\textbf{Datos:}
+
+\begin{itemize}
+    \item Radio \(\Rightarrow \; R = 1 \;m\).
+    \item Densidad volumétrica \(\Rightarrow \; 5 \; C/m^3\).
+    \item Distancia donde se calcula el campo \(\Rightarrow \; r = 10 \; m\).
+\end{itemize}
+
+\vspace{\baselineskip}
+
+\begin{justify}
+    Para resolver nuestro problema usaremos la fórmula que viene dada por:
+\end{justify}
+
+
+\[E = \frac{K \cdot Q}{r^2}. \]
+
+\begin{justify}
+    Pero antes definamos la constante de Coulomb \(K\):
+\end{justify}
+
+\[K = \frac{1}{4 \cdot \pi \epsilon_0 } \approx 9 \times 10^9 \; N \cdot m^2 / C^2.\]
+
+\vspace{\baselineskip}
+
+\begin{justify}
+    A continuación, debemos obtener la carga total del campo (\(Q\)), para esto, necesitamos saber que su valor en una esfera es
+    el producto de la densidad volumétrica (\(\rho\)) y el volumen de la esfera (\(V\)). 
+\end{justify}
+
+\begin{justify}
+    Donde el volumen de la esfera es: \(V = \frac{4}{3} \; \pi R^3\).
+\end{justify}
+
+\begin{justify}
+    Obtenemos:
+\end{justify}
+
+\[Q = \rho \cdot V = \rho \cdot \frac{4}{3} \; \pi R^3.\]
+
+\begin{justify}
+    Reemplazando por nuestros datos:
+\end{justify}
+
+\[Q = 5 \; C/m^3 \cdot \frac{4}{3} \; \pi (1 \; m)^3 \Rightarrow \frac{20 \; C/ \cancel{m^3}}{3} \; \cancel{m^3} \; \pi = \boxed{20.94 \; C.}\]
+
+\begin{justify}
+    Con estos parámetros definidos, procedemos a obtener el campo eléctrico en un punto de la forma:
+\end{justify}
+
+\[E = \frac{9 \times 10^9 \; N \cdot m^2/ C^{\cancel{2}} \cdot 20.94 \; \cancel{C}}{(10 \; m)^2} = \frac{1.8849 \times 10^{11} \; N \cdot \cancel{m^2} / C}{100 \; \cancel{m^2}}\]
+
+\vspace{\baselineskip}
+
+\[\boxed{E = 1.884 \times 10^9 \; N/C.}\]
+
+\subsection*{Punto 2.}
+
+\vspace{\baselineskip}
+
+\textbf{Datos:}
+
+\begin{itemize}
+    \item Intensidad eléctrica \(\Rightarrow I =  5 \; A\).
+    \item Distancia donde se calcula el campo \(\Rightarrow r = 10 \; m.\)
+\end{itemize}
+
+\vspace{\baselineskip}
+
+\begin{justify}
+    Para obtener el campo en un punto de un conductor infinito, usaremos la fórmula:
+\end{justify}
+
+\[B = \frac{\mu_0 \; I}{2 \; \pi \; r}.\]
+
+\vspace{\baselineskip}
+
+\begin{justify}
+    Igual que en el punto anterior, definiremos la permeabilidad magnética del vacío \(\mu_0\).
+\end{justify}
+
+\[\mu_0 = 4 \; \pi \times 10^{-7} \; T \cdot m / A.\]
+
+
+\begin{justify}
+    Procedemos entonces a desarrollar nuestra ecuación.
+\end{justify}
+
+\[B = \frac{4 \; \pi \times 10^{-7} \; T \cdot \cancel{m} / \cancel{A} \cdot 5 \; \cancel{A}}{2 \; \pi \; 10 \; \cancel{m}} = \frac{6.2831 \; T}{20 \; \pi}\]
+
+\vspace{\baselineskip}
+
+\[\boxed{B = 1 \times 10^{-7} \; T.} \]
+
+\newpage
+
+\subsection*{Punto 3}
+
+\vspace{\baselineskip}
+
+\begin{justify}
+\textbf{Calcula la fuerza que crea el campo eléctrico calculado en el punto 1 sobre una carga \(10 \; C\).}
+\end{justify}
+
+\vspace{\baselineskip}
+
+\begin{justify}
+    \textbf{Datos:}
+\end{justify}
+
+\begin{itemize}
+    \item Carga \( \Rightarrow Q = 10 \; C.\)
+    \item Campo Eléctrico \( \Rightarrow E = 1.884 \times 10^9 \; N/C.\)
+\end{itemize}
+
+\begin{justify}
+    Para obtener la fuerza del campo sobre una carga, usamos la fórmula de la fuerza eléctrica.
+\end{justify}
+
+\[F_e = Q \cdot E.\]
+
+\vspace{\baselineskip}
+
+\begin{justify}
+    Obteniendo entonces:
+\end{justify}
+
+\[F_e = 10 \; \cancel{C} \cdot 1.884 \times 10^9 \; N/ \cancel{C}.\]
+
+\vspace{\baselineskip}
+
+\[\boxed{F_e = 1.884 \times 10^{10} \; N.}\]
+
+\vspace{\baselineskip}
+
+\begin{justify}
+    \textbf{Calcula la fuerza que crea el campo magnético calculado en el punto 2 sobre una carga \(10 \; C\) que se mueve a \(10 \; m/s\).}
+\end{justify}
+
+\begin{justify}
+    \textbf{Datos:}
+\end{justify}
+
+\begin{itemize}
+    \item Campo Magnético \( \Rightarrow B = 1 \times 10^{-7} \; T.\)
+    \item Carga \( \Rightarrow Q = 10 \; C.\)
+    \item Velocidad \( \Rightarrow v = 10 \; m/s. \)
+\end{itemize}
+
+\vspace{\baselineskip}
+
+\begin{justify}
+    Para obtener la fuerza del campo magnético, usaremos la fuerza de \textbf{Lorentz}:
+\end{justify}
+
+\[ F = q \left(\vec{v} \times \vec{B} \right). \]
+
+\begin{justify}
+    Dado que no tenemos información sobre la dirección de la carga, vamos a definirla perpendicular.
+    Además, usaremos la expresión en modulo de la fuerza porque desconocemos el sentido de la velocidad y del campo,
+    por esto, no podemos definir un producto vectorial, pero si el modulo de la fuerza del campo magnético.
+\end{justify}
+
+\[F = q \cdot v \cdot B \cdot \sin (\theta).\]
+
+\begin{justify}
+    Sustituyendo obtenemos:
+\end{justify}
+
+\[F = 10 \; C \cdot 10 \; m/s \cdot 1 \times 10^{-7} \; T \cdot \sin(90).\]
+
+\[F = 100 \; \cdot 1 \times 10^{-7} \; \frac{N}{\cancel{C \cdot m/s}} \ \cancel{C \cdot m/s}\]
+
+\vspace{\baselineskip}
+
+\[\boxed{F = 1 \times 10^{-5} \; N.}\]
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+\end{document}
