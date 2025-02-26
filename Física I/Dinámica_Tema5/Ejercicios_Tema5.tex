@@ -1,0 +1,356 @@
+\documentclass[a4paper,12pt]{article}
+
+% Paquetes esenciales
+\usepackage[utf8]{inputenc}      
+\usepackage[T1]{fontenc}        
+\usepackage[spanish]{babel}      
+\usepackage{ragged2e}
+\usepackage{multicol}
+\usepackage{wasysym}
+\usepackage{enumitem}
+\usepackage{amsmath, amssymb}    
+\usepackage{amsfonts}            
+\usepackage{geometry}            
+\geometry{left=2.5cm, right=2.5cm, top=2.5cm, bottom=2.5cm}
+\usepackage{graphicx}            
+\usepackage{hyperref}            
+\hypersetup{
+    colorlinks=true,       % Activa los enlaces de colores
+    linkcolor=blue,        % Color para enlaces internos
+    urlcolor=cyan,         % Color para URLs
+    citecolor=red          % Color para citas
+}
+
+
+\begin{document}
+
+\title{Ejercicios Tema 5}
+\author{Liz' Ángel Núñez }
+\date{\today} 
+
+\maketitle
+
+\section{Calcular aceleración de la gravedad en la tierra.}
+\vspace{\baselineskip}
+\begin{justify}
+Tenemos los datos:
+\end{justify}
+
+% Usamos los "\;" porque el comando \begin{colums}{n} se va a la puta :p.
+    \(r = 6378.137 km.\)\;\;\;\;\;\;\;\;\;\;\;\;\;\; \(\mu   = G M  = 3.986004418 \times 10^{14} m^3 s^{-2}.\)
+
+\vspace{\baselineskip}
+
+\begin{justify}
+    Usaremos las formulas de fuerza y gravitación:
+\end{justify}
+\begin{multicols}{2}
+    \(F=G\;\frac{m_1 m_2}{r^2}.\)
+
+    \(F = mg. \)
+\end{multicols}
+\vspace{\baselineskip}
+\begin{justify}
+    Reemplazamos la fuerza por su equivalencia en la fórmula de la gravitación:
+    \vspace{\baselineskip}
+
+\(mg = G \; \frac{M  m_2}{r^2}\) \(\rightarrow\) \(g =\frac{G M}{r^2} \) \(\rightarrow\) \(g =\frac{\mu }{r^2}.\)
+\end{justify}
+\vspace{\baselineskip}
+
+\begin{justify}
+    Usamos los datos suministrados al inicio y obtenemos el resultado:
+\end{justify}
+\vspace{\baselineskip}
+
+\begin{center}
+    \(g =\frac{3.986004418 \times 10^{14} \frac{m^3}{s^2}}{6378137^2 m^2} = 9,8\; m\;  s^{-2}.\)    
+\end{center}
+\vspace{\baselineskip}
+
+\section{Repetir los cálculos del problema 1 para el sol en 1UA.}
+\vspace{\baselineskip}
+
+\begin{justify}
+    Contamos con los datos:
+\end{justify}
+
+% Usamos los "\;" porque el comando \begin{colums}{n} se va a la puta :p.
+    \(1AU = 1.495978707 \times 10^{11} m. \) \;\;\;\;\;\;\;\;  \(\mu  = GM  =  1.32712440018 \times 10^{20} m^3 s^{2} \)
+
+\vspace{\baselineskip}
+
+\begin{justify}
+    Hacemos el mismo razonamiento que en el punto anterior despejando la aceleración "g" de la fuerza en la fórmula de la gravitación y obtenemos la expresión:
+\end{justify}
+
+
+\begin{center}
+    \(g =\frac{\mu }{r^2}.\)
+\end{center}
+
+\vspace{\baselineskip}
+
+\begin{justify}
+    Por lo tanto obtenemos:
+\end{justify}
+
+\begin{center}
+    \(g = \frac{1.32712440018 \times 10^{20} m^3 s^{-2}}{(1.495978707 \times 10^{11})^2 m^2} = 5.93 \cdot 10^{-10} m\;s^{-2}\)
+\end{center}
+
+\begin{justify}
+    Comparando el resultado de la aceleración de la gravedad en la tierra y el sol a una distancia 1UA podemos notar que la
+    aceleración del sol es menor que la de la tierra. De este resultado se puede argüir que la diferencia radica en la dependencia inversa
+    del cuadrado de la distancia. También podemos decir que es la gran masa del sol lo que logra mantener la localidad de los otros astros.
+\end{justify}
+
+\vspace{\baselineskip}
+
+\section{Calcular la aceleración de una nave desde el ecuador y la distancia  en la cual podemos dejar en órbita el satélite.}
+\begin{justify}
+    Tenemos los datos:
+\end{justify}
+\begin{itemize}
+    \item Día sidéreo  \(\rightarrow \;23h \; 56m \; 4091s\).
+    \item Radio terrestre \(\rightarrow \; r  = 6378.137 km.\)
+    \item Parámetro gravitacional estándar \(\rightarrow \;\mu   = G\cdot M  = 3.986004418 \times 10^{14} m^3\;s^{-2}.\)
+\end{itemize}
+\vspace{\baselineskip}
+
+\begin{justify}
+    Usaremos las fórmulas:
+\end{justify}
+
+% Usamos los "\;" porque el comando \begin{colums}{n} se va a la puta :p.
+\(a_c = \frac{v^2}{r}.\) \;\;\;\;\;\;\;\;\; \(F = G \cdot \frac{m_1\cdot m_2}{r^2}.\) \;\;\,\;\;\;\;\;\; \(F_c = m \cdot a .\)
+
+\vspace{\baselineskip}
+\begin{justify}
+    Obtenemos el periodo órbital:
+\end{justify}
+\(T = 82800 + 3360 + 4,091 \; \rightarrow T = 86164.091\).
+
+\begin{justify}
+    Tenemos que la velocidad tangencial es \(v_t = \frac{2\pi r}{T}\) que usaremos en nuestra fórmula \(a_c = \frac{v_t^2}{r} \rightarrow a_c =  \frac{(\frac{2\pi r}{T})^2}{r} \rightarrow \frac{4\pi^2 r^2}{T^2 r} \rightarrow \frac{4\pi^2 r}{T^2}.\)
+\end{justify}
+\begin{justify}
+Y \(F = G \cdot \frac{m_1\cdot m_2}{r^2} \rightarrow F_c = m \cdot a . \rightarrow m\cdot a = G \cdot \frac{m_1\cdot m_2}{r^2} \rightarrow  a_c =  \frac{G\cdot M  }{r^2} \rightarrow a_c = \frac{\mu }{r^2}.\)
+\end{justify}
+\vspace{\baselineskip}
+\begin{justify}
+    Igualaremos la fuerza gravitacional \(\left(\frac{\mu }{r^2}\right)\) con la aceleración centrípeta \(\left(a_c = \frac{4\pi^2 r}{T^2}\right)\) porque la fuerza gravitatoria es la causa de la acelearación centrípeta.
+\end{justify}
+\vspace{\baselineskip}
+
+\(a_c = \frac{\mu }{r^2} = \frac{4\pi^2 r}{T^2}.\) 
+\vspace{\baselineskip}
+
+
+\(\mu T^2 = 4\pi^2 r^3 \rightarrow  \frac{\mu T^2}{4\pi^2}=r^3 \rightarrow r = \sqrt[3]{\frac{\mu T^2}{4\pi^2}}. \)
+\vspace{\baselineskip}
+
+\begin{justify}
+    Operamos: 
+\end{justify}
+
+\(r^3 = \frac{3,986004418 \times 10^{14}\left(86164091\right)^2}{4\pi^2} \Rightarrow r = \sqrt[3]{7.496018685512828\times 10^{22}} = 4.2164\times 10^{6}m.  \)
+\vspace{\baselineskip}
+
+\begin{justify}
+    Como lanzamos nuestro satélite desde la superficie de la tierra sobre el ecuador, debemos restarle a nuestro resultado el radio de la tierra.
+\end{justify}
+\begin{center}
+    
+\(4.2164\times 10^{6}m - 6378137m = 35781.863 km\).
+\end{center}
+
+\begin{justify}
+    Como hemos visto en nuestro procedimiento, masa del satélite no es relevante en los cálculos, por ende esta no afectará la orbita del mismo si esta se triplicase.
+\end{justify}
+
+
+\section{Calcula a qué distancia de la superficie de Marte, desde el ecuador, ¿Podemos orbitar manteniendo la misma ubicación para un espectador desde su superficie?.}
+
+\vspace{\baselineskip}
+
+\begin{justify}
+    Datos:
+\end{justify}
+\begin{itemize}
+    \item Día sidéreo  \(\rightarrow \;24h \; 37m \; 22.663s\).
+    \item Radio Marte \(\rightarrow r \male = 3389.5 km\).
+    \item Parámetro gravitacional estándar \(\Rightarrow \mu\male = GM\male = 4.282837 \times 10^{13} m^3\cdot s^{-2}\).
+\end{itemize}
+
+\vspace{\baselineskip}
+\begin{justify}
+    Obtenemos el periodo órbital
+\end{justify}
+
+\(T = 86400 + 2220 +22.663 = 88,642.663 s\).
+\vspace{\baselineskip}
+
+\begin{justify}
+    Al igual que en punto pasado, aplicaremos el mismo razonamiento para llegar a un cálculo igual con diferentes variables.
+\end{justify}
+\vspace{\baselineskip}
+
+\(r^3 = \frac{\mu T^2}{4\pi^2} \rightarrow r \sqrt[3]{\frac{\mu T^2}{4\pi^2}}\).
+
+\begin{justify}
+    Usamos los datos:
+\end{justify}
+\(r^3 = \frac{4.282837 \times 10^{13}\left(88,642.663\right)^2}{4\pi^2} = \sqrt[3]{8.723307300852058 \times 10^{27}} = 20585451m\)
+
+\begin{justify}
+    Restaremos el radio de marte a nuestro resultado.
+\end{justify}
+\vspace{\baselineskip}
+
+\(20585451 - 3389500 = 17195951 \Rightarrow 17195.951 km.\)
+
+\section{¿Qué aceleración sentirá un astronauta en el despegue debido a las fuerzas de ligadura producidas por el asiento?}
+\vspace{\baselineskip}
+
+\begin{justify}
+    Datos:
+\end{justify}
+
+\begin{itemize}
+    \item \(5000 t \Rightarrow  5.000.000 kg\) .
+    \item \(74 MN \Rightarrow 74.000.000 n\).
+\end{itemize}
+\vspace{\baselineskip}
+
+\begin{justify}
+    Para saber la aceleración del cohete usaremos la segunda ley de Newton \(F = m \cdot a \)
+    donde al despejar la aceleración \(a = \frac{F}{m}\).
+\end{justify}
+
+\begin{justify}
+    Tendriamos:
+\end{justify}
+
+\(a = \frac{74 \times 10^6}{5 \times 10^6} = 14.8 m \cdot s^{-2}\).
+
+\begin{justify}
+    Sin embargo, para saber la aceleración neta que experimenta el astronauta debemos añadir tambien la gravedad, es entonces que decimos que \(a_t = a + g.\)
+    Donde \(a_t\) es la aceleración total.
+\end{justify}
+
+\vspace{\baselineskip}
+\(a_t = 14.8 \; m \cdot s^{-2} + 9.81 \; m \cdot s^{-2} = 24.61 \; m \cdot s^{-2} .\)
+
+\begin{justify}
+    Donde el peso relativo que experimenta el astronauta es \(P_r = \frac{a_t}{g} \rightarrow \frac{24.61}{9.81}=2.50\).
+\end{justify}
+
+\begin{justify}
+Podemos afirmar que el astronauta siente un aceleración \(2.51\) veces la gravedad de la tierra.
+\end{justify}
+
+\vspace{\baselineskip}
+\section{Calcular el coeficiente mínimo de fricción estática \(\mu_s\). }
+\vspace{\baselineskip}
+
+\begin{justify}
+    Datos:
+\end{justify}
+
+\begin{itemize}
+    \item \(v = 36 \; km \cdot h^{-1} \Rightarrow \frac{36 \cdot 1000}{3600} = 10 \; m \cdot s^{-1}.\)
+    \item \(r = 15 \; m\).
+\end{itemize}
+
+\vspace{\baselineskip}
+
+\begin{justify}
+    Para determinar el coeficiente de fricción estática usaremos la primera y segunda ley de Newton.
+\end{justify}
+
+\begin{enumerate}
+    \item \(\Sigma F_y = 0 \Rightarrow\) \;\;\;\;\;\;\;\;\;\;\;\;\;\;\;\;\;\;\;\; Primera ley para el eje vertical \(\left(y\right)\).
+    \item \(\Sigma F_x = m \cdot a \Rightarrow\) \;\;\;\;\;\;\;\;\;\;\;\;\;\; Segunda ley para el eje horizontal \(\left(x\right)\).
+\end{enumerate}
+
+\vspace{\baselineskip}
+\begin{justify}
+    La fuerza que interviene en el eje horizontal es la fuerza de fricción \(\left(F_f\right)\) que es equivalente a masa por aceleración centrípeta \(\left(a_c\right)\).
+\end{justify}
+
+\(F_f= m\cdot a_c\).
+
+\begin{justify}
+    Por definición la fuerza de fricción es igual al producto de \(\left(\mu\right)\) por la normal \(\left(N\right)\), y la aceleración centrípeta al cociente del cuadrado de la velocidad entre el radio \(\left(\frac{v^2}{r}\right)\).
+\end{justify}
+
+\(\mu \cdot N = m \cdot \frac{v^2}{r}\).
+
+\begin{justify}
+    Como no tenemos el valor de la normal \(\left(N\right)\), usaremos la primera ley de Newton, las fuerzas que intervienen en el coche verticalmente son la normal y el peso \(\left(m \cdot g\right)\).
+\end{justify}
+
+\(N - m \cdot g = 0 \Rightarrow N = m \cdot g \).
+
+\begin{justify}
+Llegamos a la siguiente conclusión:
+\end{justify}
+
+\(\mu \cdot m \cdot g = m \frac{v^2}{r} \;\;\; \rightarrow \;\;\; \mu \cdot g = \frac{v^2}{r} \;\;\; \Rightarrow \;\;\; \mu = \frac{v^2}{g \cdot r} .\)
+
+\begin{justify}
+    Sustituyendo por nuestros datos obtendremos el coeficiente mínimo de fricción estática.
+\end{justify}
+
+\(\mu_s = \frac{10^2}{9.81 \cdot 15} = 0.6795.\)
+
+\vspace{\baselineskip}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+\end{document}
