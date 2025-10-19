@@ -1,0 +1,9 @@
+\babel@toc {spanish}{}\relax 
+\contentsline {section}{\numberline {1}Cita y problemas estadísticos.}{3}{section.1}%
+\contentsline {section}{\numberline {2}Referencias relevantes.}{3}{section.2}%
+\contentsline {section}{\numberline {3}Construir un algoritmo en R.}{3}{section.3}%
+\contentsline {section}{\numberline {4}Bases de datos.}{3}{section.4}%
+\contentsline {section}{\numberline {5}Fotografía de los datos.}{3}{section.5}%
+\contentsline {section}{\numberline {6}Informes gráficos.}{4}{section.6}%
+\contentsline {section}{\numberline {7}Conclusiones.}{4}{section.7}%
+\contentsline {section}{\numberline {8}Calificación/Observaciones.}{5}{section.8}%

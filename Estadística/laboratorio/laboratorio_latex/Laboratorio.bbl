@@ -1,0 +1,113 @@
+\begin{thebibliography}{}
+
+\bibitem [\protect \citeauthoryear {%
+Cordoba%
+\ \BBA {} Ortega%
+}{%
+Cordoba%
+\ \BBA {} Ortega%
+}{%
+{\protect \APACyear {2023}}%
+}]{%
+renewable-energy}
+\APACinsertmetastar {%
+renewable-energy}%
+\begin{APACrefauthors}%
+Cordoba, R\BPBI S.%
+\BCBT {}\ \BBA {} Ortega, R\BPBI R.%
+\end{APACrefauthors}%
+\unskip\
+\newblock
+\APACrefYearMonthDay{2023}{}{}.
+\newblock
+{\BBOQ}\APACrefatitle {Renewable Energy Sources and Energy Production: A
+  Bibliometric Analysis of the Last Five Years} {Renewable energy sources and
+  energy production: A bibliometric analysis of the last five years}.{\BBCQ}
+\newblock
+\APACjournalVolNumPages{sustainability}{}{}{}.
+\newblock
+\APACrefnote{\url{https://doi.org/10.3390/su151310499}}
+\PrintBackRefs{\CurrentBib}
+
+\bibitem [\protect \citeauthoryear {%
+Hannah~Ritchie%
+}{%
+Hannah~Ritchie%
+}{%
+{\protect \APACyear {2024}}%
+}]{%
+owid-energy-production-consumption}
+\APACinsertmetastar {%
+owid-energy-production-consumption}%
+\begin{APACrefauthors}%
+Hannah~Ritchie, M\BPBI R., Pablo~Rosado.%
+\end{APACrefauthors}%
+\unskip\
+\newblock
+\APACrefYearMonthDay{2024}{}{}.
+\newblock
+{\BBOQ}\APACrefatitle {Energy Production and Consumption} {Energy production
+  and consumption}.{\BBCQ}
+\newblock
+\APACjournalVolNumPages{Our World in Data}{}{}{}.
+\newblock
+\APACrefnote{\url{https://ourworldindata.org/energy-production-consumption}}
+\PrintBackRefs{\CurrentBib}
+
+\bibitem [\protect \citeauthoryear {%
+Ibarra%
+\ \BBA {} Díaz%
+}{%
+Ibarra%
+\ \BBA {} Díaz%
+}{%
+{\protect \APACyear {2024}}%
+}]{%
+Consumption-Energy}
+\APACinsertmetastar {%
+Consumption-Energy}%
+\begin{APACrefauthors}%
+Ibarra, E.%
+\BCBT {}\ \BBA {} Díaz, F.%
+\end{APACrefauthors}%
+\unskip\
+\newblock
+\APACrefYearMonthDay{2024}{}{}.
+\newblock
+{\BBOQ}\APACrefatitle {Consumo de energías renovables y sus principales
+  determinantes en países desarrollados y emergentes, 1996-2020} {Consumo de
+  energías renovables y sus principales determinantes en países desarrollados
+  y emergentes, 1996-2020}.{\BBCQ}
+\newblock
+\APACjournalVolNumPages{FACE: Revista de la Facultad de Ciencias Económicas y
+  Empresariales}{24}{}{103-116}.
+\newblock
+\APACrefnote{\url{https://www.researchgate.net/publication/387167295_Consumo_de_energias_renovables_y_sus_principales_determinantes_en_paises_desarrollados_y_emergentes_1996-2020}}
+\PrintBackRefs{\CurrentBib}
+
+\bibitem [\protect \citeauthoryear {%
+Soundankar%
+}{%
+Soundankar%
+}{%
+{\protect \APACyear {2025}}%
+}]{%
+Data-set}
+\APACinsertmetastar {%
+Data-set}%
+\begin{APACrefauthors}%
+Soundankar, A.%
+\end{APACrefauthors}%
+\unskip\
+\newblock
+\APACrefYearMonthDay{2025}{}{}.
+\newblock
+{\BBOQ}\APACrefatitle {Global Energy Consumption (2000-2024)} {Global energy
+  consumption (2000-2024)}.{\BBCQ}
+\newblock
+\APACjournalVolNumPages{kaggle}{}{}{}.
+\newblock
+\APACrefnote{\url{https://www.kaggle.com/datasets/atharvasoundankar/global-energy-consumption-2000-2024}}
+\PrintBackRefs{\CurrentBib}
+
+\end{thebibliography}

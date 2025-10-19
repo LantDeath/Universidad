@@ -1,0 +1,28 @@
+\begin{thebibliography}{}
+
+\bibitem [\protect \citeauthoryear {%
+Barbara~Illowsky%
+}{%
+Barbara~Illowsky%
+}{%
+{\protect \APACyear {2018}}%
+}]{%
+Introductory-statistics}
+\APACinsertmetastar {%
+Introductory-statistics}%
+\begin{APACrefauthors}%
+Barbara~Illowsky, S\BPBI D.%
+\end{APACrefauthors}%
+\unskip\
+\newblock
+\APACrefYearMonthDay{2018}{}{}.
+\newblock
+{\BBOQ}\APACrefatitle {Introductory Statistics} {Introductory
+  statistics}.{\BBCQ}
+\newblock
+\APACjournalVolNumPages{Rice University}{}{}{}.
+\newblock
+\APACrefnote{\url{https://assets.openstax.org/oscms-prodcms/media/documents/IntroductoryStatistics-OP_i6tAI7e.pdf}}
+\PrintBackRefs{\CurrentBib}
+
+\end{thebibliography}

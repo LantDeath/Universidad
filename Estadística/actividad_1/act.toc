@@ -1,0 +1,13 @@
+\babel@toc {spanish}{}\relax 
+\contentsline {section}{Introducción}{3}{section*.2}%
+\contentsline {section}{\numberline {1}Contrastes de hipótesis.}{3}{section.1}%
+\contentsline {section}{\numberline {2}Algoritmo.}{4}{section.2}%
+\contentsline {section}{\numberline {3}Parámetros del algoritmo.}{4}{section.3}%
+\contentsline {section}{\numberline {4}Escenarios modelo.}{4}{section.4}%
+\contentsline {section}{\numberline {5}Desarrollo de los modelos.}{5}{section.5}%
+\contentsline {subsection}{\numberline {5.1}Carpas T-Student.}{5}{subsection.5.1}%
+\contentsline {subsection}{\numberline {5.2}Fábrica Z(Normal).}{6}{subsection.5.2}%
+\contentsline {section}{\numberline {6}Conclusiones que esperabamos obtener de los escenarios.}{6}{section.6}%
+\contentsline {subsection}{\numberline {6.1}Carpas.}{6}{subsection.6.1}%
+\contentsline {subsection}{\numberline {6.2}Fábrica.}{6}{subsection.6.2}%
+\contentsline {section}{\numberline {7}Calificación/Observaciones.}{7}{section.7}%

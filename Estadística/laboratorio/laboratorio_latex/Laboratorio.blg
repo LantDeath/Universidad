@@ -1,0 +1,58 @@
+This is BibTeX, Version 0.99d
+Capacity: max_strings=200000, hash_size=200000, hash_prime=170003
+The top-level auxiliary file: Laboratorio.aux
+Reallocating 'name_of_file' (item size: 1) to 8 items.
+The style file: apacite.bst
+Reallocating 'name_of_file' (item size: 1) to 6 items.
+Reallocating 'glb_str_end' (item size: 4) to 20 items.
+Reallocating 'glb_str_ptr' (item size: 4) to 20 items.
+Reallocating 'global_strs' (item size: 1) to 4000000 items.
+Reallocating 'singl_function' (item size: 4) to 100 items.
+Reallocating 'wiz_functions' (item size: 4) to 6000 items.
+Reallocating 'singl_function' (item size: 4) to 100 items.
+Reallocating 'singl_function' (item size: 4) to 100 items.
+Reallocating 'wiz_functions' (item size: 4) to 9000 items.
+Reallocating 'singl_function' (item size: 4) to 100 items.
+Database file #1: citas.bib
+apacite.bst [2013/07/21 v6.03 APA bibliography style]
+You've used 4 entries,
+            6951 wiz_defined-function locations,
+            1295 strings with 11653 characters,
+and the built_in function-call counts, 7221 in all, are:
+= -- 887
+> -- 48
+< -- 354
++ -- 358
+- -- 8
+* -- 469
+:= -- 1413
+add.period$ -- 16
+call.type$ -- 4
+change.case$ -- 68
+chr.to.int$ -- 0
+cite$ -- 8
+duplicate$ -- 163
+empty$ -- 285
+format.name$ -- 76
+if$ -- 1348
+int.to.chr$ -- 0
+int.to.str$ -- 12
+missing$ -- 0
+newline$ -- 105
+num.names$ -- 32
+pop$ -- 94
+preamble$ -- 1
+purify$ -- 16
+quote$ -- 0
+skip$ -- 497
+stack$ -- 0
+substring$ -- 388
+swap$ -- 98
+text.length$ -- 8
+text.prefix$ -- 0
+top$ -- 1
+type$ -- 320
+warning$ -- 0
+while$ -- 24
+width$ -- 0
+write$ -- 120
