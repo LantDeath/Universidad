@@ -1,0 +1,344 @@
+\documentclass[a4paper,12pt]{article} % Tipo de documento y tamaño de letra.
+\usepackage[utf8]{inputenc} % Para que reconozca caracteres especiales como tildes.
+\usepackage[spanish, es-nodecimaldot]{babel} % Para definir el idioma y el formato de fechas en español.
+\usepackage{amsmath, amssymb} % Paquetes para símbolos y ecuaciones avanzadas (Para hacer una ecuación con un recuadro).
+\usepackage{ragged2e} % Para justificar textos.
+\usepackage{multicol} % Para crear columnas.
+\usepackage{slashed} % Para generar números o variables canceladas (Una línea diagonal sobre el número o variable).
+\usepackage{graphicx} % Paquete para poner graficas.
+\usepackage{float} % Para poder dejar la imagen en un punto fijo del documento.
+\usepackage{longtable} % Para tablas largas.
+\usepackage{cancel} % Para hacer cancelaciones en medio de operaciones.
+\usepackage{xcolor} % Para el color y esas cosas.
+\usepackage{apacite} % Paquete para citas APA.
+\usepackage{fancyhdr} % Para personalizar encabezados y pies de página.
+\usepackage{geometry} % Para ajustar márgenes.
+\usepackage{setspace} % Para ajustar el interlineado.
+\usepackage{natbib} % Para manejar las citas y que no queden pegadas y feas :P.
+\usepackage{hyperref} % Para que los enlaces funcionen con su URL.
+\usepackage[version=4]{mhchem}  % Versión recomendada para mayor funcionalidad.
+\usepackage{chemfig} %También para hacer estructuras químicas.
+\usepackage{array} % Para mejor control de las columnas.
+\usepackage{siunitx} % Para unidades físicas.
+
+
+\pagestyle{fancy}
+\fancyhf{} % Limpia encabezados y pies de página predeterminados
+\fancyhead[L]{\textbf{LABORATORIO QUICKFIELD.}} % Encabezado izquierdo
+\fancyhead[R]{\textbf{ELECTROMAGNETISMO I.}} % Encabezado derecho
+\fancyfoot[C]{\thepage} % Número de página en el centro del pie
+
+\geometry{headheight=12.96115pt, top=1in, bottom=1in, left=1in, right=1in}
+\begin{document}
+
+
+\begin{figure}[H]
+	\centering
+	\includegraphics[width=0.5\textwidth]{Unir.jpg}
+\end{figure}
+
+\vspace{\baselineskip}
+
+% Ajustamos manualmente todo ;)
+\begin{center}
+	\textbf{\Large } \\[0.9cm]
+	\vspace{\baselineskip}
+	\textbf{Liz Ángel Núñez Torres.} \\[0.6cm]
+	\textbf{Grado en Física.} \\[0.6cm]
+	\textbf{Universidad Internacional de La Rioja.} \\[0.6cm]
+	\textbf{8 de Diciembre 2025.}
+\end{center}
+
+
+\newpage
+\tableofcontents
+
+\newpage
+
+\section{Hilo Infinito.}
+
+\begin{justify}
+Hacemos el \textbf{Hilo Infinito} con el mallado y la solución del mismo.
+\end{justify}
+
+\begin{justify}
+    Configuración en \textbf{QuickField}:
+\end{justify}
+
+\begin{multicols}{3}
+    \begin{itemize}
+        \item \( \lambda = 2 \times 10^{-9}. \)
+        
+        \item \( \epsilon_r =1 .\)
+        
+        \item \( \mathrm{V} = 0. \)
+    \end{itemize}
+\end{multicols}
+
+
+\begin{figure}[H]
+    \centering
+    \includegraphics[width=0.8 \textwidth]{figura1.jpg}
+\end{figure}
+
+\begin{justify}
+    Solucionamos y obtenemos los resultados.
+\end{justify}
+
+\begin{figure}[H]
+    \centering
+    \includegraphics[width=1.1 \textwidth]{figura1.3.jpg}
+\end{figure}
+
+\newpage
+
+\begin{justify}
+    Modificamos el script en \textbf{Python} para nuestro ejemplo.
+\end{justify}
+
+\begin{figure}[H]
+    \centering
+    \includegraphics[width=0.9 \textwidth]{figura1.1.jpg}
+\end{figure}
+
+\begin{justify}
+    Obtenemos el plot de las figuras.
+\end{justify}
+
+\begin{figure}[H]
+    \centering
+    \includegraphics[width=1.1 \textwidth]{figura1.2.jpg}
+\end{figure}
+
+\subsection{Conclusión.}
+
+\begin{justify}
+    Lo resultados en \textbf{QuickField} validan la dependencia radial teórica.
+\end{justify}
+
+\newpage
+
+\section{Plano Cargado.}
+
+
+\begin{justify}
+    Configuración en \textbf{QuickField}:
+\end{justify}
+
+\begin{multicols}{3}
+    \begin{itemize}
+        \item Vacío \(\epsilon_r = 1.  \)
+        
+        \item Contorno \( \mathrm{V} = 0.\)
+        
+        \item Carga  \( \sigma = 0.5 \, C/m^2. \)
+    \end{itemize}
+\end{multicols}
+
+
+\begin{figure}[H]
+    \centering
+    \includegraphics[width=0.8 \textwidth]{figura2.jpg}
+\end{figure}
+
+
+\begin{justify}
+    Solucionamos el plano.
+\end{justify}
+
+\begin{figure}[H]
+    \centering
+    \includegraphics[width=1.1 \textwidth]{figura2.1.jpg}
+\end{figure}
+
+\newpage
+
+\begin{justify}
+    Corregimos \(\sigma\) en el script de Python.
+\end{justify}
+
+\begin{figure}[H]
+    \centering
+    \includegraphics[width=1 \textwidth]{figura2.2.jpg}
+\end{figure}
+
+\begin{justify}
+    La graficas que obtenemos son:
+\end{justify}
+
+\begin{figure}[H]
+    \centering
+    \includegraphics[width=0.8 \textwidth]{figura2.3.jpg}
+\end{figure}
+
+\subsection{Conclusión.}
+
+\begin{justify}
+    Los resultados en QuickField validan que \textbf{el campo eléctrico de un plano infinito es constante e independiente de la distancia}, cumpliendo \(E = \sigma/(2 \epsilon_0)\).
+\end{justify}
+
+\newpage 
+
+\section{Condensador Plano.}
+
+\begin{justify}
+    Configuración en \textbf{QuickField}:
+\end{justify}
+
+
+\begin{justify}
+    \begin{itemize}
+        \item \textbf{Dimensiones Condensador:}
+    \end{itemize}
+\end{justify}
+
+\begin{multicols}{3}
+    \begin{itemize}
+        \item \( W =20 mm.\)
+        
+        \item \( h = 20 \, mm. \)
+        
+        \item \( L_z = 10 \, mm. \)
+    \end{itemize}
+\end{multicols}
+
+\begin{multicols}{2}
+    \begin{itemize}
+        \item Material IZQ. \( \epsilon_{r1} = 4. \)
+        
+        \item  Material DER. \( \epsilon_{r2} = 1. \)
+    \end{itemize}
+\end{multicols}
+
+\begin{multicols}{2}
+    \begin{itemize}
+        \item Voltaje \( V = 10\,V.  \)
+        
+        \item Separación \( d = 20\,mm.\)
+    \end{itemize}
+\end{multicols}
+
+
+\begin{justify}
+    \textbf{Condensador Plano y \(Q_s\)}
+\end{justify}
+
+
+\begin{figure}[H]
+    \centering
+    \includegraphics[width=0.8 \textwidth]{figura3.jpg}
+\end{figure}
+
+\begin{justify}
+    Tabla QuickField.
+\end{justify}
+
+\begin{figure}[H]
+    \centering
+    \includegraphics[width=1.1 \textwidth]{figura3.1.jpg}
+\end{figure}
+
+\newpage
+
+\begin{justify}
+    Comprobamos \(\mathbf{Q_s}\) con Python.
+\end{justify}
+
+\begin{figure}[H]
+    \centering
+    \includegraphics[width=1 \textwidth]{figura3.2.jpg}
+\end{figure}
+
+\begin{justify}
+    Gráficas del \textbf{desplazamiento} y el \textbf{campo eléctrico.}
+\end{justify}
+
+\begin{figure}[H]
+    \centering
+    \includegraphics[width=1 \textwidth]{figura3.3.jpg}
+\end{figure}
+
+\subsection{Conclusión.}
+
+\begin{justify}
+    Los resultados obtenidos mediante QuickField muestran un valor prácticamente constante de \(D_y\), en concordancia con la teoría, lo que confirma la correcta modelización del sistema.
+\end{justify}
+
+\vspace{\baselineskip}
+
+\section{Espira Corriente.}
+
+\begin{justify}
+    Configuración en \textbf{QuickField}:
+\end{justify}
+
+\begin{multicols}{3}
+    \begin{itemize}
+        \item \( w = 80\)
+        
+        \item \( h = 60 \)
+        
+        \item \( y = 30 \)
+    \end{itemize}
+\end{multicols}
+
+
+\begin{multicols}{3}
+    \begin{itemize}
+        \item Radio \( R = 12.5\)
+        \item Corriente \( I = 2.5 \)
+    \end{itemize}
+\end{multicols}
+
+
+\begin{figure}[H]
+    \centering
+    \includegraphics[width=0.9 \textwidth]{figura4.jpg}
+\end{figure}
+
+\begin{justify}
+    Obtenemos la tabla de datos.
+\end{justify}
+
+
+\begin{figure}[H]
+    \centering
+    \includegraphics[width=0.9 \textwidth]{figura4.1.jpg}
+\end{figure}
+
+
+\newpage
+
+
+\begin{justify}
+    Modificamos los valores en Python.
+\end{justify}
+
+\begin{figure}[H]
+    \centering
+    \includegraphics[width=0.9 \textwidth]{figura4.2.jpg}
+\end{figure}
+
+\begin{justify}
+    Obtenemos el Plot del código.
+\end{justify}
+
+\begin{figure}[H]
+    \centering
+    \includegraphics[width=0.9 \textwidth]{figura4.3.jpg}
+\end{figure}
+
+\subsection{Conclusión.}
+
+\begin{justify}
+Los resultados obtenidos mediante QuickField muestran una concordancia con la solución teórica. Se comprobo con \(Bz_{teo}\) en Python, que la componente axial del campo magnético sigue la depencia teórica.
+\end{justify}
+
+\section{Revisión.}
+
+\begin{figure}[H]
+    \centering
+    \includegraphics[width=1 \textwidth]{revision.jpg}
+\end{figure}
+
+\end{document}

@@ -1,0 +1,1314 @@
+\documentclass[a4paper,12pt]{article} % Tipo de documento y tamaño de letra.
+\usepackage[utf8]{inputenc} % Para que reconozca caracteres especiales como tildes.
+\usepackage[spanish, es-nodecimaldot]{babel} % Para definir el idioma y el formato de fechas en español.
+\usepackage{amsmath, amssymb} % Paquetes para símbolos y ecuaciones avanzadas (Para hacer una ecuación con un recuadro).
+\usepackage{ragged2e} % Para justificar textos.
+\usepackage{multicol} % Para crear columnas.
+\usepackage{slashed} % Para generar números o variables canceladas (Una línea diagonal sobre el número o variable).
+\usepackage{graphicx} % Paquete para poner graficas.
+\usepackage{float} % Para poder dejar la imagen en un punto fijo del documento.
+\usepackage{longtable} % Para tablas largas.
+\usepackage{cancel} % Para hacer cancelaciones en medio de operaciones.
+\usepackage{xcolor} % Para el color y esas cosas.
+\usepackage{apacite} % Paquete para citas APA.
+\usepackage{fancyhdr} % Para personalizar encabezados y pies de página.
+\usepackage{geometry} % Para ajustar márgenes.
+\usepackage{setspace} % Para ajustar el interlineado.
+\usepackage{natbib} % Para manejar las citas y que no queden pegadas y feas :P.
+\usepackage{hyperref} % Para que los enlaces funcionen con su URL.
+\usepackage[version=4]{mhchem}  % Versión recomendada para mayor funcionalidad.
+\usepackage{chemfig} %También para hacer estructuras químicas.
+\usepackage{array} % Para mejor control de las columnas.
+\usepackage{siunitx} % Para unidades físicas.
+
+
+\pagestyle{fancy}
+\fancyhf{} % Limpia encabezados y pies de página predeterminados
+\fancyhead[L]{\textbf{CAMPO ELÉCTRICO.}} % Encabezado izquierdo
+\fancyhead[R]{\textbf{ELECTROMAGNETISMO l.}} % Encabezado derecho
+\fancyfoot[C]{\thepage} % Número de página en el centro del pie
+
+\geometry{headheight=12.96115pt, top=1in, bottom=1in, left=1in, right=1in}
+\begin{document}
+
+
+\begin{figure}[H]
+	\centering
+	\includegraphics[width=0.5\textwidth]{Unir.jpg}
+\end{figure}
+
+\vspace{\baselineskip}
+
+% Ajustamos manualmente todo ;)
+\begin{center}
+	\textbf{\Large } \\[0.3cm]
+	\vspace{\baselineskip}
+	\textbf{Liz Ángel Núñez Torres.} \\[0.4cm]
+	\textbf{Grado en Física.} \\[0.4cm]
+	\textbf{Universidad Internacional de La Rioja.} \\[0.4cm]
+	\textbf{23 de Octubre 2025.}
+\end{center}
+
+
+\newpage
+\tableofcontents
+
+\newpage
+
+\section{Introducción.}
+
+\begin{justify}
+	Al lector, \textbf{Jorge Giner Navarro}.
+\end{justify}
+
+\begin{justify}
+	\begin{enumerate}
+		\item Para una mejor lectura y cohesión en el desarollo, hemos dejado las soluciones parciales en \textcolor{purple}{recuadros púrpuras} y las soluciones finales en \textcolor{blue}{recuadros azules.}
+		\item Por la naturaleza del trabajo, se ha prescindido de omitir ciertos desarrollos que serán clave para comprender el camino hacia la solución de cada ejercicio, por esto, lo extenso del trabajo.
+	\end{enumerate}
+\end{justify}
+
+\section{Ejercicio 1.}
+
+\begin{justify}
+	Las cargas \( q_1 \;\text{y}\; q_2 \) se encuentran en el eje \( y \) a una distancia de \(0.4\) metros del origen.
+	La carga \(q_3\) se encuentra en el eje \(x\) a \(0.3\) metros del origen. Calcula la magnitud y la dirección de la fuerza que \( q_1\) y \( q_2 \) ejercen sobre la carga \(q_3\).
+\end{justify}
+
+\begin{figure}[H]
+	\centering
+	\includegraphics[width=0.5 \textwidth ]{figura1.jpg}
+\end{figure}
+
+\subsection{Datos.}
+
+\vspace{\baselineskip}
+
+
+\begin{multicols}{2}
+	\begin{itemize}
+		\item \( q_1 = 2 \times 10^{-6} \mathrm{C}.  \)
+	\end{itemize}
+
+	\columnbreak
+
+	\begin{itemize}
+		\item \( \vec{r_1} = \left( 0, 0.4 \right) \; \mathrm{m}.\)
+	\end{itemize}
+\end{multicols}
+
+\begin{multicols}{2}
+	\begin{itemize}
+		\item \( q_1 = 2 \times 10^{-6} \; \mathrm{C}. \)
+	\end{itemize}
+
+	\columnbreak
+	\begin{itemize}
+		\item\(  \vec{r_2} = (0 , -0.4) \; \mathrm{m}. \)
+	\end{itemize}
+\end{multicols}
+
+\begin{multicols}{2}
+	\begin{itemize}
+		\item\( q_3 = 8 \times 10^{-6} \; \mathrm{C}. \)
+	\end{itemize}
+
+	\columnbreak
+
+	\begin{itemize}
+		\item\( \vec{r_3} = (0.3 , 0) \; \mathrm{m}. \)
+	\end{itemize}
+\end{multicols}
+
+\vspace{\baselineskip}
+
+\begin{justify}
+	Sabemos que la fuerza entre dos cargas se expresa como:
+\end{justify}
+
+\[ \vec{F}_{i \rightarrow j} = k \; \frac{q_i \; q_j}{\vert \vec{r_i} - \vec{r_j}  \vert ^2} \; \vec{\mu}. \]
+
+\vspace{\baselineskip}
+
+\begin{justify}
+	Para simplificar los cálculos, usaremos la expresión de la forma:
+\end{justify}
+
+\[ \boxed{\vec{F}_{i \rightarrow j} = k \; \frac{q_i \; q_j}{\vert \vec{r_i} - \vec{r_j}  \vert ^3} \; \vec{r_i} - \vec{r_j}.} \]
+
+\subsection{Cálculo de la Fuerza \(\vec{F}_{31}.\)}
+
+\vspace{\baselineskip}
+
+\begin{justify}
+	Procederemos a iniciar el desarrollo de la fuerza ejercida de la carga \(q_1\) a \(q_2\) calculando el \textbf{vector de separación}.
+\end{justify}
+
+\[ \vec{r}_{31} = \vec{r}_3 - \vec{r}_1 = (0.3 - 0 , 0 - 0.4).\]
+
+\[ \vec{r}_{31} = (0.3 , -0.4). \]
+
+\vspace{\baselineskip}
+
+\begin{justify}
+	Ahora calcularemos el módulo del vector \(\vec{r}_{31}\) para conocer su distancia desde la carga \(q_1\) a la carga \(q_2\).
+\end{justify}
+
+\[ \vert \vec{r}_{31} \vert = \sqrt{\left( 0.3 \right)^2 + \left( -0.4 \right)^2 } = 0.5. \]
+
+\vspace{\baselineskip}
+
+\begin{justify}
+	Con los datos calculados, obtenemos nuestra formula de la fuerza  \(\vec{F}_{31}\).
+\end{justify}
+
+\[ \vec{F}_{31} = \frac{1}{4 \pi \epsilon_0} \cdot \frac{q_1 q_2}{\vert \vec{r}_{31} \vert^3} \vec{r}_{31}. \]
+
+\vspace{\baselineskip}
+
+\begin{justify}
+	Desarrollamos la formula anterior.
+\end{justify}
+
+\[\vec{F}_{31} = 9 \times 10^9 \cdot \frac{ \left( 2 \times 10^{-6} \right)  \cdot \left( 8 \times 10^{-6} \right) }{ 0.5^3} \left( 0.3 , -0.4 \right).\]
+
+\[\vec{F}_{31} = \frac{0.144}{0.125} \left( 0.3 , -0.4 \right)  \Rightarrow 1.152 \cdot \left( 0.3 , -0.4 \right) \]
+
+\vspace{\baselineskip}
+
+\[ \textcolor{purple}{\boxed{\vec{F}_{31}= \left( 0.3456 \hat{x} , -04608 \hat{y}\right).}} \]
+
+\subsection{Cálculo de la Fuerza \(\vec{F}_{32}\).}
+
+\vspace{\baselineskip}
+
+\begin{justify}
+	Usaremos los mismos pasos para el desarrollo de la fuerza \(\vec{F}_{32}\) que usamos en \(\vec{F}_{31}\).
+\end{justify}
+
+\vspace{\baselineskip}
+
+\begin{justify}
+	\begin{itemize}
+		\item \textbf{Vector separación.}
+	\end{itemize}
+\end{justify}
+
+\[ \vec{r}_{32} = \vec{r_3} - \vec{r_2} = \left( 0.3 - 0 , 0 - \left( - 0.4\right) \right)\]
+
+\[ \vec{r}_{32} = (0.3 , 0.4) \]
+
+\vspace{\baselineskip}
+
+\begin{justify}
+	\begin{itemize}
+		\item \textbf{Módulo del vector.}
+	\end{itemize}
+\end{justify}
+
+\[ \vert \vec{r}_{32} \vert  = \sqrt{(0.3)^2 + (0.4)^2} = 0.5. \]
+
+\vspace{\baselineskip}
+
+\begin{justify}
+	\begin{itemize}
+		\item \textbf{Calculamos la fuerza} \(\vec{F}_{32}\).
+	\end{itemize}
+\end{justify}
+
+\[ \vec{F}_{32} = 9 \times 10^9 \cdot \frac{\left( 2 \times 10 ^{-6} \right) \cdot \left( 8 \times 10^{-6} \right)}{0.5^3} \left( 0.3 , 0.4 \right). \]
+
+\vspace{\baselineskip}
+
+\[ \vec{F}_{32} = \frac{0.144}{0.125} \left( 0.3 , 0.4 \right)  \Rightarrow 1.152 \cdot \left( 0.3 , 0.4 \right) \]
+
+\vspace{\baselineskip}
+
+\[ \textcolor{purple}{\boxed{ \vec{F}_{32} = \left( 0.3456\hat{x} , 0.4608\hat{y} \right).}} \]
+
+\vspace{\baselineskip}
+
+\subsection{Fuerza \(\vec{F}_3\).}
+
+\begin{justify}
+	La fuerza \(\vec{F}_3\) es el resultado de la suma de las componentes de las fuerzas que ejercen las cargas \(q_1\) y \(q_2\) sobre la carga \(q_3\).
+\end{justify}
+
+\[  \vec{F}_3 = \vec{F}_{31} + \vec{F}_{31}  \Rightarrow \left( 0.3456 + 0.3456 , 0.4608 - 0.4608 \right).\]
+
+\[ \textcolor{purple}{ \boxed{\vec{F}_3 = \left(  0.6912 \hat{x} , 0\hat{y} \right).}}\]
+
+\subsection{Magnitud y Dirección de la Fuerza \(\vec{F}_3\). }
+
+\vspace{\baselineskip}
+
+\begin{justify}
+	\begin{itemize}
+		\item \textbf{La magnitud de la fuerza} \(\vec{F}_3\):
+	\end{itemize}
+\end{justify}
+
+
+
+\[ \vert \vec{F}_3 \vert = \sqrt{\left( 0.6912  \right)^2 + \left( 0 \right)^2} \Rightarrow \cancel{}\sqrt[]{\left(  0.6912  \right)^{\cancel{2}}} \]
+
+\vspace{\baselineskip}
+
+\[ \textcolor{blue}{\boxed{\vert \vec{F}_3 \vert = \left( 0.6912 \hat{x}, 0\hat{y}\right) \; \mathrm{N.}}} \]
+
+\vspace{\baselineskip}
+
+\begin{justify}
+	\begin{itemize}
+		\item \textbf{Dirección de la fuerza} \(\vec{F}_3\):
+	\end{itemize}
+\end{justify}
+
+\[ \tan \theta = \frac{F_y}{F_x} \Rightarrow \theta = \arctan = \frac{0}{0.6912} \]
+
+\vspace{\baselineskip}
+
+\[ \textcolor{blue}{\boxed{ \theta = 0^{\circ} .}} \]
+
+\vspace{\baselineskip}
+
+\begin{justify}
+	Una vez con la dirección y magnitud de la fuerza \(\vec{F}_{3}\) establecidas, podemos argüir que la dirección de la fuerza se ejerce por el plano \(x+\) dado que la simetría de las
+	cargas \(q_1\) y \(q_2\) hace que las componentes de las ordenadas \(\textcolor{red}{\mathrm{y}}\) se cancelen y se sumen las componentes de las abscisas \(\textcolor{red}{\mathrm{x}}\).
+\end{justify}
+
+\vspace{\baselineskip}
+
+\section{Ejercicio 2.}
+
+
+\vspace{\baselineskip}
+
+\begin{justify}
+	Tenemos un anillo de radio \(\mathrm{R} \) que tiene una carga uniforme \(\lambda\) por unidad de longitud.
+	El anillo se encuentra en el plano \(\mathrm{xy}\) y en su eje se encuentra una carga \(\mathrm{q}\).
+	La carga se encuentra a una distancia a del origen. Calcula la fuerza que se ejerce sobre la carga \(\mathrm{q}\).
+\end{justify}
+
+\begin{figure}[H]
+	\centering
+	\includegraphics[width=0.4 \textwidth ]{figura2.jpg}
+\end{figure}
+
+\vspace{\baselineskip}
+
+\subsection{Datos.}
+
+\vspace{\baselineskip}
+
+\begin{multicols}{2}
+	\begin{itemize}
+		\item \textbf{Radio:} \(\mathrm{R}\).
+	\end{itemize}
+
+	\columnbreak
+
+	\begin{itemize}
+		\item \textbf{Fuerza:} \(\vec{F} = K \; \frac{q \; dq}{\vert \vec{r_q} - \vec{r}'  \vert^3} \vec{R}\).
+	\end{itemize}
+\end{multicols}
+
+\begin{multicols}{2}
+	\begin{itemize}
+		\item \textbf{Densidad Carga Lineal:} \(\lambda = \frac{q}{L}\).
+	\end{itemize}
+
+	\columnbreak
+
+	\begin{itemize}
+		\item \textbf{Distancia Anillo - Carga:} \( \mathrm{d}\).
+	\end{itemize}
+
+\end{multicols}
+
+\begin{multicols}{2}
+	\begin{itemize}
+		\item \textbf{Perímetro Circunferencia:} \(2\pi\mathrm{r}\).
+	\end{itemize}
+
+	\columnbreak
+
+	\begin{itemize}
+		\item \textbf{Constante Proporcionalidad:}
+
+		      \( \mathrm{K} = \frac{1}{4 \pi \epsilon_0}\).
+	\end{itemize}
+
+\end{multicols}
+
+\subsection{Densidad de Carga y Elemento Diferencial.}
+
+\vspace{\baselineskip}
+
+\begin{justify}
+	Sabemos que \(\lambda\) es el cociente de la carga y la longitud, por esto tomaremos un elemento diferencial del anillo y de la carga en un
+	tramo de la superficie de la circunferencia, como el anillo tiene una carga uniforme, cada tramo de la superficie es igual a la carga total del
+	perímetro de la circunferencia.
+\end{justify}
+
+\[\lambda = \frac{\mathrm{Q}}{2 \pi \mathrm{R}} \Rightarrow \mathrm{Q} = \lambda \; 2\pi \mathrm{R}. \]
+
+\[\lambda = \frac{dq}{dl} \Rightarrow dq = \lambda \; dl. \]
+
+\subsection{Vectores de Posición.}
+
+\begin{justify}
+	El vector que va desde \(\mathrm{dq}\) hasta \(\mathrm{q}\) es, por coordenada polares en \(\vec{r}'\):
+\end{justify}
+
+\[ \vec{r}' = \left( R \cos \theta, R \sin \theta, 0 \right). \]
+
+\[ \vec{r}_q = \left( 0,0,a \right).\]
+
+\[ \vec{R} = \vec{r}_q - \vec{r}' = \left( - R \cos \theta, -R \sin \theta, a \right). \]
+
+\begin{justify}
+	Ahora definimos el módulo del vector \( \vec{R}\) que es la distancia desde \(dq\) a \(q\).
+\end{justify}
+
+\[ \vert \vec{R} \vert = \sqrt{R^2 \cos^2 \theta + R^2 \sin^2 \theta + a^2}.  \]
+
+\begin{justify}
+	De la \textbf{identidad trigonométrica fundamental} sabemos que:
+\end{justify}
+
+\[ \sin^2 \theta + \cos^2 \theta = 1.\]
+
+\begin{justify}
+	Por lo tanto el vector es:
+\end{justify}
+
+\[ \vert\vec{ R }\vert = \sqrt{R^2 + a^2} \equiv d. \]
+
+
+\vspace{\baselineskip}
+
+\subsection{Diferenciales de Fuerzas sobre la Carga \(\mathrm{q}\).}
+
+\begin{figure}[H]
+	\centering
+	\includegraphics[width=0.4 \textwidth ]{figura3.jpg}
+\end{figure}
+
+\vspace{\baselineskip}
+
+\begin{justify}
+	El diferencial eléctrico \(d\vec{F}\) tiene otro diferencial diametralmentre opuesto \(d \vec{F}'\), que genera una que las componentes \(\mathrm{xy}\) de los campos se anulen,
+	mientras que la componente \(\mathrm{z}\) presenta una adición, producto de todas las diferenciales de fuerza que ejercen en la carga \(\mathrm{q}\).
+\end{justify}
+
+
+\begin{justify}
+	Como estamos buscando un diferencial de fuerza, la ecuación de Coulomb sobre la fuerza sería:
+\end{justify}
+
+
+\[ dF = \frac{1}{4\pi \epsilon_0} \; \frac{q \; dq}{d^3}\vec{R}  \]
+
+\begin{justify}
+	Sustituyendo \( dq\) y \(\mathrm{d}\).
+\end{justify}
+
+\[  d\vec{F} = \frac{1}{4 \pi \epsilon_0} \; \frac{q \lambda dl}{\left( R^2 + a^2 \right)^{3/2}} \cdot  \left(-R \cos \theta, -R \sin \theta, a \right). \]
+
+\begin{justify}
+	Por lo tanto, en la componente \(\mathrm{z}\) tenemos.
+\end{justify}
+
+\[ dF_z = \frac{1}{4 \pi \epsilon_0 } \; \frac{q \lambda dl}{\left( R^2 + a^2 \right)^{3/2}} \cdot a . \]
+
+\vspace{\baselineskip}
+
+\subsection{Integración en dl y Fuerza.}
+
+\begin{justify}
+	Como queremos integrar el área del anillo, sacaremos fuera de la integral todas las constantes.
+\end{justify}
+\begin{justify}
+	Como la integral de \(dl\) sobre toda la longitud es igual al perímetro \( \Rightarrow 2 \pi R.\)
+\end{justify}
+
+\[ \int_{0}^{2 \pi R} F_z = \int_{0}^{2 \pi R} \frac{1}{4 \pi \epsilon_0} \; \frac{q\lambda dl \; a}{\left( R^2 + a^2 \right)^{3/2}} \Rightarrow  \frac{1}{4 \pi \epsilon_0} \; \frac{q\lambda a}{\left( R^2 + a^2 \right)^{3/2}} \int_{0}^{2 \pi R} dl. \]
+
+\vspace{\baselineskip}
+
+\[ F_z = \frac{1}{4 \pi \epsilon_0} \; \frac{q a \; \lambda 2 \pi R}{\left( R^2 + a^2 \right)^{3/2}}. \]
+
+\begin{justify}
+	Sustuimos \(\lambda\) y tenemos:
+\end{justify}
+
+\[ F_z = \frac{1}{4 \pi \epsilon_0} \; \frac{q Q a}{\left( R^2 + a^2 \right)^{3/2}}. \]
+
+\begin{justify}
+	Por lo tanto, la fuerza total que se ejerce es:
+\end{justify}
+
+\[ \textcolor{purple}{ \boxed{ \vec{F} = \left( 0 , 0, F_z \right)}} \]
+
+\[\textcolor{blue}{\boxed{ F = \frac{1}{4 \pi \epsilon_0} \; \frac{q Q a}{\left( R^2 + a^2 \right)^{3/2}} \; \hat{z}. }}\]
+
+\vspace{\baselineskip}
+
+\section{Ejercicio 3.}
+
+\begin{justify}
+	Tenemos una esfera maciza no conductora que tiene un radio \(\mathrm{R}\) y una cavidad esférica en su interior de radio \(\mathrm{a}\),
+	con una distribución uniforme de carga, donde su carga total es \(\mathrm{Q}\).
+	Calcula el campo eléctrico.
+\end{justify}
+
+\begin{figure}[H]
+	\centering
+	\includegraphics[width=0.5 \textwidth]{figura4.jpg}
+\end{figure}
+
+\subsection{Ley de Gauss.}
+
+\begin{justify}
+	Usando la ley de Gauss, que nos dice que el flujo a través de una superficie cerrada es igual a la carga eléctrica interna
+	dividida por la constante de permitividad del vacío.
+\end{justify}
+
+\[ \oint \vec{E} \cdot d\vec{s} = \frac{Q_{int}}{\epsilon_0}.\]
+
+\subsection{Región I.}
+
+\begin{justify}
+	Para la primer región definiremos una superficia gaussiana de radio \( r \):
+\end{justify}
+
+\begin{figure}[H]
+	\centering
+	\includegraphics[width=0.4 \textwidth]{figura6.jpg}
+\end{figure}
+
+\begin{justify}
+	Como se puede apreciar, tenemos una superficie de la forma \( 0 < r < a\), pero como esta superficie está en el vacío
+	no se genera ninguna carga por definición.
+\end{justify}
+
+\[ \textcolor{purple}{\boxed{\oint \mathbf{E} \cdot d \mathbf{S} = \frac{q_{int}}{\epsilon_0} = 0 \;\;\;\;\;\; \Rightarrow \;\;\;\;\;\; E_r = 0.}} \]
+
+\vspace{\baselineskip}
+
+\subsection{Región II.}
+
+\begin{justify}
+	La carga encerrada por una superficie gaussiana de radio \(\mathbf{r}\) será la carga contenida entre el tramo intermedio de \(\mathbf{a}\) y \(\mathbf{R}\).
+\end{justify}
+
+\begin{figure}[H]
+	\centering
+	\includegraphics[width=0.4 \textwidth]{figura5.jpg}
+\end{figure}
+
+\begin{justify}
+	La superficie encerrada es \( a < r < R  \) que se representa en color verde. Por esta definición, ahora la carga interior no es toda la carga, es dos partes de carga.
+\end{justify}
+
+\begin{justify}
+	Para este caso, definimos la \textbf{densidad de carga} que será proporcional al volumen y la carga \textbf{r}.
+\end{justify}
+
+\vspace{\baselineskip}
+
+\[ \rho = \frac{Q}{V}= \frac{Q_{int}}{V_{int}} \;\;\;\; \Rightarrow \;\;\;\; \frac{Q}{\cancel{\frac{3}{4}\pi} R^3}= \frac{Q_{int}}{\cancel{\frac{3}{4}\pi} r^3} \;\;\;\; \Rightarrow \;\;\;\; Q_{int} = \left( \frac{r}{R} \right)^3 \, Q. \]
+
+\begin{justify}
+	De la ley de Gauss, sabiendo que el flujo del campo por la superficie de la esfera es:
+\end{justify}
+
+\[ \oint \vec{\mathbf{E}} \cdot d \vec{S} = E \cdot 4 \pi r^2 \]
+
+\begin{justify}
+	Aplicaremos ahora la ley de Gauss sustituyendo la carga interna y el flujo del campo por la superfice.
+\end{justify}
+
+\[ E = 4\pi r^2 = \frac{\left(\frac{r}{R}\right)^3Q}{\epsilon_0} \;\; \Rightarrow \;\; 4 \pi r^2 = \left(\frac{r}{R}\right)^3 \cdot Q \cdot \frac{1}{\epsilon_0}. \]
+
+\begin{justify}
+	Despejamos el campo eléctrico.
+\end{justify}
+
+\[ E = \frac{1}{4 \pi r^2 \epsilon_0} \cdot \frac{r^{3}}{R^3} \cdot Q. \]
+
+\vspace{\baselineskip}
+
+\[ \textcolor{purple}{\boxed{ E = \frac{Q r^3}{4 \pi r^2 \epsilon_0 R^3} }}\]
+
+\begin{justify}
+	Sustituimos los radios \(\mathbf{r}\) y \(\mathbf{R}\).
+\end{justify}
+
+\[ \textcolor{purple}{\boxed{ E_r = \frac{Q \left( r^3 - a^3 \right)}{4 \pi r^2 \epsilon_0 \left(R^3 - a^3\right)}}} \]
+
+\vspace{\baselineskip}
+
+\subsection{Región III}
+
+\begin{justify}
+	La carga total \(\mathbf{\mathrm{Q}}\) está encerrada en la superficie gaussiana de radio \(\mathbf{r}\) cuando \( \mathbf{r > R}\).
+\end{justify}
+
+\begin{figure}[H]
+	\centering
+	\includegraphics[width=0.5 \textwidth]{figura7.jpg}
+\end{figure}
+
+\begin{justify}
+	Desarrollando la ley de Gauss tenemos:
+\end{justify}
+
+\[ \oint \mathbf{\vec{E}} \cdot d \mathbf{\vec{S}} = \frac{Q}{\epsilon_0} \;\;\; \Rightarrow \;\;\; E \cdot 4 \pi r^2 = \frac{Q}{\epsilon_0}.   \]
+
+\begin{justify}
+	Despejando el campo eléctrico, obtenemos la carga encerrada por la superficie gaussiana.
+\end{justify}
+
+\[ \textcolor{purple}{\boxed{E_r = \frac{Q}{4 \pi r^2 \epsilon_0}. }} \]
+
+\subsection{Valor de los Campos Eléctricos.}
+
+\vspace{\baselineskip}
+
+\[\textcolor{blue}{\boxed{\displaystyle\mathbf{E}(r)=
+			\begin{cases}
+				\mathbf{0},                                                                                   & 0 < r<a, \\[6pt]
+				\displaystyle \frac{Q \left( r^3 - a^3 \right)}{4 \pi r^2 \epsilon_0 \left(R^3 - a^3\right)}, & a<r<R,   \\[10pt]
+				\displaystyle  \frac{Q}{4 \pi r^2 \epsilon_0},                                                & r>R .
+			\end{cases}
+		}}
+\]
+
+\vspace{\baselineskip}
+
+\section{Ejercicio 4.}
+
+\begin{justify}
+	Tenemos un cilindro no conductor infinito de radio \(\mathrm{\mathbf{R}}\).
+	Tiene una densidad volumétrica de carga \( \rho \).
+	El cilindro tiene una cavidad cilíndrica coaxial con el cilindro de radio \(\mathrm{\mathbf{a}}\).
+	Calcula la densidad de carga lineal que debe haber en el eje del cilindro para que el campo en el exterior no sea cero y la contribución de la densidad de carga lineal sea igual a la contribución dada por la densidad volumétrica del cilindro.
+\end{justify}
+
+
+\begin{figure}[H]
+	\centering
+	\includegraphics[width=0.8 \textwidth]{figura8.jpg}
+\end{figure}
+
+\subsection{Densidad \(\rho\).}
+
+\begin{justify}
+	En la región \(\mathbf{ 0 < r < a}\) no hay carga al ser una cavidad.
+\end{justify}
+
+\begin{justify}
+	La contribución de \(\lambda\) y \( \rho\) es:
+\end{justify}
+
+\[ E_{\lambda} \left( r \right) + E_{cc} \left( r \right) = 0. \]
+
+\begin{justify}
+	Donde \(\mathbf{E_{cc}}\) es el campo en el \textbf{cilindro con cavidad.}
+\end{justify}
+
+\begin{justify}
+	Es entonces que la densidades se definen:
+\end{justify}
+
+\begin{multicols}{2}
+	\begin{itemize}
+		\item Cilindro radio \(\mathbf{R}\) con densidad \( \Rightarrow \rho.\)
+
+		\item Cilindro radio \(\mathbf{a}\) con densidad \( \Rightarrow - \rho. \)
+	\end{itemize}
+\end{multicols}
+
+\subsection{Ley de Gauss Superficie Cilindrica.}
+
+\begin{justify}
+	Aplicamos la ley de Gauss para una superficie cilindrica coaxial de radio \( \mathbf{ r > R }\) y longitud \(\mathbf{L}\).
+\end{justify}
+
+\begin{itemize}
+	\item Carga interior.
+
+	      \[ Q_{int} = \rho \left( \pi R^2 L \right).\]
+
+	\item Flujo eléctrico.
+
+	      \[ \oint \vec{E} \cdot d \vec{S} = \mathrm{E} \cdot \left( 2 \pi r L \right). \]
+
+	\item Aplicamos ley de Gauss.
+
+	      \[ \mathrm{E} \cdot 2 \pi r L = \frac{\rho \left( \pi R^2 L \right)}{\epsilon_0}  \;\; \Rightarrow \;\; \mathrm{E} = \frac{\rho \left( \cancel{\pi} R^2 \cancel{L} \right)}{ 2 \cancel{\pi} r \cancel{L} \epsilon_0}.\]
+
+	      \[\textcolor{purple}{\boxed{\mathrm{E_1} = \frac{\rho R^2}{2r\epsilon_0}.}}\]
+\end{itemize}
+
+\subsection{Ley de Gauss Cilindro interior.}
+
+\begin{justify}
+	Una superficie gaussiana en \(mathbf{r > R > a}\), el cilindro pequeño con densidad \( - \rho\) es como si su carga estuviera concentrada en una línea del eje.
+\end{justify}
+
+\begin{itemize}
+	\item Carga interior.
+
+	      \[Q_{cc} = -\rho \left(\pi a^2 L\right).  \]
+
+	\item Flujo eléctrico.
+
+	      \[ \oint \vec{E} \cdot d\vec{S} = \mathrm{E} \cdot \left( 2 \pi r L \right). \]
+
+	\item Aplicamos Gauss.
+
+	      \[ \mathrm{E_{cc}} \cdot  \left( 2 \pi r L \right) = \frac{-\rho \left(\pi a^2 L\right)}{\epsilon_0} = \frac{-\rho \left( \cancel{\pi} a^2 \cancel{L}\right)}{2 \cancel{\pi} r \cancel{L} \epsilon_0}.\]
+
+	      \[ \textcolor{purple}{\boxed{E_{2} = \frac{-\rho a^2}{2r\epsilon_0}}}\]
+\end{itemize}
+
+\subsection{Campo eléctrico total sin \( \lambda\).}
+
+\begin{justify}
+	Para el campo eléctrico total haremos la suma de los campos que obtuvimos por la ley de Gauss.
+\end{justify}
+
+\[ E\left(r\right) = E_1 + E_2  \;\;\; \Rightarrow \;\;\; \frac{\rho R^2}{2 \epsilon_0 r} + \frac{- \rho a^2}{2 \epsilon_0 r}.\]
+
+\[ \textcolor{purple}{\boxed{E\left(r\right) = \frac{\rho \left(R^2 - a^2\right)}{2 \epsilon_0 r}.}}\]
+
+\begin{justify}
+	\begin{itemize}
+		\item \textbf{ Campo de la línea} \(\lambda\) \textbf{en el eje.}
+
+		\item \(\mathbf{r > 0}.\)
+	\end{itemize}
+\end{justify}
+
+\[ \textcolor{purple}{\boxed{E_{\lambda}\left(r\right) \frac{\lambda}{2 \pi \epsilon_0 r}.}} \]
+
+\subsection{Densidad líneal en el eje.}
+
+\begin{justify}
+	\(E_T = 0\) en \( r > R\) sería la suma de los campos, el campo de la línea \(\lambda\) en el eje y el campo eléctrico total sin \(\lambda\).
+\end{justify}
+
+\[ E_T = E_{\Lambda}\left( r \right) + E\left( r \right) = 0 \;\; \Rightarrow \;\; \frac{\lambda}{2 \pi \epsilon_0 r} + \frac{\rho \left(R^2 - a^2 \right)}{2 \epsilon_0 r} \; \Rightarrow \; \lambda = -\frac{\rho \left(R^2 - a^2\right) \cancel{2} \pi \cancel{\epsilon_0} \cancel{r}}{\cancel{2} \cancel{\epsilon_0} \cancel{r}}.\]
+
+\subsection{Resultado con y sin Campo Exterior.}
+
+\begin{justify}
+	El resultado que hemos obtenido, es si se quiere eliminar el campo exterior. Dejaremos ambas respuestas al lector, con el campo exterior y sin el campo exterior.
+\end{justify}
+
+\begin{multicols}{2}
+	\begin{itemize}
+		\item \textbf{Campo Exterior.}
+	\end{itemize}
+
+	\columnbreak
+
+	\begin{itemize}
+		\item \textbf{Sin Campo Exterior.}
+	\end{itemize}
+\end{multicols}
+
+\begin{multicols}{2}
+	\[\textcolor{blue}{\boxed{\lambda = \rho \pi \left(R^2 -a^2\right).}}\]
+
+	\columnbreak
+
+	\[\textcolor{blue}{\boxed{\lambda = - \rho \pi \left(R^2 -a^2\right).}}\]
+\end{multicols}
+
+\section{Ejercicio 5.}
+
+\begin{justify}
+	Tenemos un campo \(\vec{E} = \left( yz-x \right) \hat{x} + \left( zx - y \right) \hat{y} + \left(xy - z\right) \hat{z}\), Indica si es un campo electrostático y por qué, si lo es. Calcula también el potencial.
+\end{justify}
+
+\subsection{Verificación Campo Electrostático.}
+
+\begin{justify}
+	Para saber si nuestro campo es electrostático el rotacional debe ser nulo \(\forall \; \mathbb{R}^3. \)
+\end{justify}
+
+\[ \nabla \times \vec{\mathbf{E}} = \begin{vmatrix}
+		\hat{x}                     & \hat{y}                     & \hat{z}                     \\
+		\frac{\partial}{\partial x} & \frac{\partial}{\partial y} & \frac{\partial}{\partial z} \\
+		yz - x                      & zx - y                      & xy - z                      \\
+	\end{vmatrix} \Rightarrow
+	\nabla \times \vec{\mathbf{E}} = \left( 0, 0, 0\right).
+\]
+
+\begin{itemize}
+	\item \textbf{Componente }\(\hat{x}.\)
+
+	      \[\frac{\partial}{\partial y}\left(xy - z\right) - \frac{\partial}{\partial z}\left(zx - y\right) = x - x = \textcolor{purple}{\boxed{0}}. \]
+
+	\item \textbf{Componente }\(\hat{y}.\)
+
+	      \[\frac{\partial}{\partial z}\left(yz - x\right) - \frac{\partial}{\partial x}\left(xy - z\right) = y - y = \textcolor{purple}{\boxed{0}}. \]
+
+	\item \textbf{Componente }\(\hat{z}.\)
+
+	      \[\frac{\partial}{\partial x}\left(zx - y\right) - \frac{\partial}{\partial y}\left(yz - x \right) = z - z = \textcolor{purple}{\boxed{0}}. \]
+
+\end{itemize}
+
+\[ \textcolor{purple}{\boxed{\nabla \times \vec{\mathbf{E}} = \left( 0, 0, 0\right).}} \]
+
+\subsection{Calcular el Potencial Electrostático}
+
+\begin{justify}
+	Del campo eléctrico.
+\end{justify}
+
+\[ \vec{E} = - \nabla \; V.\]
+
+\begin{justify}
+	Por lo tanto.
+\end{justify}
+
+\begin{itemize}
+	\item \(\frac{\partial V}{\partial x} = -\mathrm{E}_x = -\left( yz - x \right) = -yz + x.\)
+
+	\item \(\frac{\partial V}{\partial y} = -\mathrm{E}_y = -\left(zx - y\right) = -zx +y. \)
+
+	\item \(\frac{\partial V}{\partial z} = -\mathrm{E}_z = -\left(xy - z \right) = -xy +z. \)
+\end{itemize}
+
+\subsection{Integrales y Derivadas por Componentes.}
+
+\begin{justify}
+	\textbf{Integramos respecto de x.}
+\end{justify}
+
+\[V = \left(x, y ,z\right) \;\; \Rightarrow \;\; \int \left(-yz + x\right) dx \;\; \Rightarrow \;\; -yzx + \frac{x^2}{2}+ f\left(y,z\right).  \]
+
+\begin{justify}
+	Derivamos a \(y\) e igualamos a \(-zx +y.\)
+\end{justify}
+
+\[\frac{\partial V}{\partial y} = -zx + \frac{\partial f}{\partial y}.\]
+
+\begin{justify}
+	Debe ser igual a \(-zx + y,\)
+\end{justify}
+
+\[ \frac{\partial f}{\partial y} = y. \]
+
+\begin{justify}
+	Integrando respecto a \(y\)
+\end{justify}
+
+\[ f\left(y,z\right) = \frac{y^2}{2}+ g\left(z\right). \]
+
+\begin{justify}
+	Por lo tanto.
+\end{justify}
+
+\[ V = -xyz + \frac{x^2}{2} + \frac{y^2}{2} +g\left(z\right).\]
+
+\begin{justify}
+	Derivamos respecto a \(z\) e igualamos a \(-xy +z.\)
+\end{justify}
+
+\[ \frac{\partial V}{\partial z} = -xy + g'\left(z\right). \]
+
+\begin{justify}
+	Debe ser a igual a \(-xy + z.\)
+\end{justify}
+
+\[g'\left(h\right) = z.\]
+
+\begin{justify}
+	De la integral.
+\end{justify}
+
+\[ g'\left( z \right) = \frac{z^2}{2} + c. \]
+
+\subsection{Potencial Final.}
+
+\[ V\left(x, y, z\right) = -xyz + \frac{x^2}{2} + \frac{y^2}{2} + \frac{z^2}{2} + \mathrm{C}.\]
+
+\[\textcolor{blue}{\boxed{V\left(x, y, z\right) = \frac{x^2 + y^2 + z^2}{2} - xyz + \mathrm{C}.}}\]
+
+\section{Ejercicio 6.}
+
+\begin{justify}
+	Tenemos tres cargas en un triángulo isósceles.
+	El valor de estas es \(q_1 = 7 \, \mu \mathrm{C}, \; q_2 = -7 \, \mu \mathrm{C}, q_3 = -7 \, \mu\mathrm{C}. \)
+	La separación entre \(q_2\) y \(q_3\) (en la base del triángulo) es de 2 cm y la separación entre cualquiera de estas y \(q_1\) es de 4 cm.
+	Queremos saber el potencial eléctrico en el punto medio de la base de dicho triángulo.
+\end{justify}
+
+\begin{figure}[H]
+	\centering
+	\includegraphics[width=0.4 \textwidth]{figura9.jpg}
+\end{figure}
+
+\subsection{Datos.}
+
+\begin{multicols}{2}
+	\begin{itemize}
+		\item \(q_1 = 7 \mu \mathrm{C}.\)
+
+		\item \(q_2 = -7 \mu \mathrm{C}.\)
+	\end{itemize}
+\end{multicols}
+
+\begin{multicols}{2}
+	\begin{itemize}
+		\item \(q_3 = -7 \mu \mathrm{C}.\)
+
+		\item Distancias: \(r_2 = r_3 = 0.01\mathrm{m},\)
+
+		      \( r_1 = 0.038729.\)
+	\end{itemize}
+\end{multicols}
+
+\subsection{Potencial.}
+
+\begin{justify}
+	Antes de hacer el potencial, cabe destacar que hemos omitido el procedimiento de las distancias. Sin embargo, es fácil deducir que las distancias
+	entres \(q_2\) y \(q_3\) ha de ser la mitad respecto de cada una, y la distancia del centro a \(q_1\) forma un triángulo que al usar el teorema de pítagoras se obtiene su resultado.
+\end{justify}
+
+\begin{justify}
+	El potencial.
+\end{justify}
+
+\[ V\left(r\right) = K \, \sum_{i}^{} \, \frac{q_i}{r_i}.\]
+
+\begin{justify}
+	Aplicamos.
+\end{justify}
+
+\[ V= K \left(\frac{q_1}{r_1} + \frac{q_2}{r_2} + \frac{q_3}{r_3} \right) \Rightarrow K \left(\frac{q_1}{r_1} + \frac{2 \, q_2}{r_2}\right). \]
+
+\vspace{\baselineskip}
+
+\[ V = \frac{1}{4 \pi \epsilon_0} \cdot \left(\frac{ 7 \times 10^{-6} }{0.038729} + \frac{ 2\left(-7 \times 10 ^{-6}\right)  }{0.01}\right).  \]
+
+\vspace{\baselineskip}
+
+\[ V = 1.626 \times 10^6 \, V - 12 \times 10^-6 \, V. \]
+
+\vspace{\baselineskip}
+
+\[ \textcolor{blue}{\boxed{ V = -10.374 \times^6 \, V .}} \]
+
+\begin{justify}
+	El potencial es negativo porque \(q_2\) y \(q_3\) interactúan más cerca del punto medio de la base del triángulo que la carga \(q_1\) que es positiva y más distante.
+\end{justify}
+
+\section{Ejercicio 7.}
+
+\begin{justify}
+	Tenemos dos esferas conductoras iguales con un radio \(\mathrm{R}\). Se encuentran separadas por una distancia mucho mayor que su radio, pero conectadas mediante un cable conductor. Indica cuál es la carga en cada esfera, si el potencial de una esfera es \(\mathrm{V}\).
+\end{justify}
+
+\begin{figure}[H]
+	\centering
+	\includegraphics[width=0.8 \textwidth]{figura12.jpg}
+\end{figure}
+
+
+\subsection{Potencial de las Esferas.}
+
+\begin{justify}
+	El potencial de una esfera cargada viene definida:
+\end{justify}
+
+\[ V = K \, \frac{Q}{R}. \]
+
+\begin{justify}
+	Como son dos esferas y están conectadas, el potencial incluye el efecto de la otra esfera.
+\end{justify}
+
+\[ V_1 = K \, \frac{Q_1}{R} + K \frac{Q_2}{d}. \]
+
+\[ V_2 = K \, \frac{Q_2}{R} + K \frac{Q_1}{d}. \]
+
+\begin{justify}
+	De la igualdad de los dos potenciales.
+\end{justify}
+
+\[ \frac{Q_1}{R} + \frac{Q_2}{d} =  \frac{Q_2}{R} + \frac{Q_1}{d}. \]
+
+\begin{justify}
+	Multiplicamos \(\mathrm{Rd}\) y factorizamos.
+\end{justify}
+
+\[ Q_1 \left( d - R \right) = Q_2 \left( d - R \right). \]
+
+\begin{justify}
+	Por lo tanto.
+\end{justify}
+
+\[ Q_1 = Q_2. \]
+
+
+\subsection{Carga en las Esferas.}
+
+\begin{justify}
+	Como \(Q_1 = Q_2\) entonces \(Q_T = Q_1 + Q_2\) porque es su valor de carga igual pero siguen siendo dos cargas del mismo valor que afectan a las esferas.
+\end{justify}
+
+\begin{justify}
+	El potencial en cualquiera de ellas.
+\end{justify}
+
+\[ V = K \, \frac{Q}{R} + K \, \frac{Q}{d} = KQ \left(\frac{1}{R} + \frac{1}{D}\right). \]
+
+\begin{justify}
+	La capacitancia total:
+\end{justify}
+
+\[ C_T = C_1 + C_2 = 4 \pi \epsilon_0 R + 4 \pi \epsilon_0 R = 8 \pi \epsilon_0 R  \]
+
+\begin{justify}
+	Por lo tanto tenemos.
+\end{justify}
+
+\[ \textcolor{purple}{\boxed{Q_T = \left( 8 \pi \epsilon_0 R \right) V. }} \]
+
+\begin{justify}
+	Sin embargo, como las esferas son iguales y lejanas, la carga se reparte en partes iguales para cada esfera.
+\end{justify}
+
+\[ Q_1 = Q_2 \;\; \Rightarrow \;\; \frac{Q_T}{2}. \]
+
+\subsection{Carga Total.}
+
+\begin{justify}
+	Por esto, la carga total es:
+\end{justify}
+
+
+\[ \textcolor{blue}{\boxed{Q_T = 4 \pi \epsilon_0 R.}} \]
+
+\section{Ejercicio 8.}
+
+\begin{justify}
+	Tenemos un condensador esférico con radios \(R_1\) y \(R_2\).
+	Se llena con un dieléctrico \(\epsilon_1\) desde \(R_1<r<r_1\).
+	Se llena con un segundo dieléctrico \(\epsilon_2\) en \(r_1<r<R_2\).
+	Halla la diferencia de potencial entre los conductores en función de la carga, y halla el valor de la capacidad
+	(nota: si tenemos dos capacitores en serie, se cumple para la capacidad equivalente \(\frac{1}{c_{eq}} = \frac{1}{C_1} + \frac{1}{C_2}\) ).
+\end{justify}
+
+\begin{figure}[H]
+	\centering
+	\includegraphics[width=0.5 \textwidth]{figura10.jpg}
+\end{figure}
+
+\subsection{Datos.}
+
+\begin{multicols}{2}
+	\begin{itemize}
+		\item Conductor interno \(\mathbf{R_1}. \)
+
+		\item Conductor externo \( \mathbf{R_2}. \)
+	\end{itemize}
+
+\end{multicols}
+
+\begin{multicols}{2}
+	\begin{itemize}
+		\item Región 1 \( \;\; \Rightarrow \epsilon_1 = R_1 < r < r_1. \)
+
+		\item Región 2 \( \;\; \Rightarrow \epsilon_2 = r_1 < r < R_1. \)
+	\end{itemize}
+\end{multicols}
+
+\begin{justify}
+	Si el conductor interno es \(+Q\) entonces el externo es \(-Q\).
+\end{justify}
+
+
+\subsection{Campo Eléctrico en cada Región.}
+
+\begin{justify}
+	Ley de Gauss con desplazamiento eléctrico:
+\end{justify}
+
+\[ \oint \vec{D} \cdot d\vec{S} = Q_{int}. \]
+
+\begin{justify}
+	Y para un medio lineal.
+\end{justify}
+
+\[ \vec{D} = \epsilon \vec{E}. \]
+
+\begin{justify}
+	Tomando la superficie Gaussiana esferica de radio \(r\) con los límites \( R_z < r < R_2 \).
+\end{justify}
+
+\[ D\left(r\right) \left(4 \pi r^2 \right) = Q \;\;\; \Rightarrow \;\;\; D\left(r\right) = \frac{Q}{4 \pi r^2}.  \]
+
+\begin{justify}
+	El resultado es independiente al dieléctrico y corresponde para cualquiera \(\mathbf{r}\) entre \(R_1\) y \(R_2\).
+\end{justify}
+
+\begin{justify}
+	Entonces el campo en cada región.
+\end{justify}
+
+\begin{justify}
+	\textbf{Región} \(\mathbf{ \left( R_1 < r < r_1 \right). }\)
+\end{justify}
+
+\[ E_1 \left( r \right) = \frac{D \left( r \right)}{\epsilon_1} = \frac{Q}{4 \pi \epsilon_1 r^2}. \]
+
+\begin{justify}
+	\textbf{Región} \(\mathbf{ \left( r_1 < r < R_2 \right). }\)
+\end{justify}
+
+\[ E_2 \left( r \right) = \frac{D \left( r \right)}{\epsilon_2} = \frac{Q}{4 \pi \epsilon_1 r^2}. \]
+
+\subsection{Diferencia de potencial.}
+
+\[ \triangle V = V\left(R_1\right) - V\left(R_2\right).  \]
+
+\[  \triangle V = \int_{R_1}^{R_2} \, E\left( r \right) dr.\]
+
+\begin{justify}
+	Pero \(E\left(r\right)\) cambia en \(r = r_1\)
+\end{justify}
+
+\[  \triangle V = \int_{R_1}^{r_1} \, E_1\left( r \right) dr + \int_{r_1}^{R_2} \, E_2\left( r \right) dr .\]
+
+\begin{justify}
+	Sacamos las constantes de la integral.
+\end{justify}
+
+\[ \triangle V = \frac{Q}{4 \pi \epsilon_1}\int_{R_1}^{r_1} \frac{dr}{r^2} + \frac{Q}{4 \pi \epsilon_1} \int_{r_1}^{R_2} \frac{dr}{r^2}. \]
+
+\begin{justify}
+	Las integrales entonces serían.
+\end{justify}
+
+\[ \int \frac{1}{r^2} dr = \int r^{-2} dr = \frac{r^{-1}}{-1} = -\frac{1}{r}. \]
+
+\subsection{Integrales de Región.}
+
+\[ \int_{R_1}^{r_1} \frac{1}{r^2} dr = \left[ - \frac{1}{r} \right]_{R_1}^{r_1} = - \frac{1}{r} - \left( - \frac{1}{R_1}\right) = \frac{1}{R_1} - \frac{1}{r_1}. \]
+
+\vspace{\baselineskip}
+
+\[ \int_{r_1}^{R_2} \frac{1}{r^2} dr = \left[ - \frac{1}{r} \right]_{r_1}^{R_2} = - \frac{1}{R_2} - \left( - \frac{1}{r_1}\right) = \frac{1}{r_1} - \frac{1}{R_1}. \]
+
+\begin{justify}
+	Por lo tanto.
+\end{justify}
+
+
+\[ \triangle V = \frac{Q}{4 \pi \epsilon_1} \left( \frac{1}{R_1} - \frac{1}{r_1} \right) + \frac{Q}{4 \pi \epsilon_1} \left( \frac{1}{r_1} - \frac{1}{R_1} \right). \]
+
+\vspace{\baselineskip}
+
+\[ \textcolor{purple}{\boxed{  \triangle V = \frac{Q}{4 \pi} \left[\frac{1}{\epsilon_1} \left(\frac{1}{R_1} - \frac{1}{r_1}\right) + \frac{1}{\epsilon_2} \left( \frac{1}{r_1} - \frac{1}{r_2} \right) \right].}}  \]
+
+\subsection{Capacitancia.}
+
+\[ C = \frac{Q}{\triangle V}. \]
+
+\vspace{\baselineskip}
+
+\[ C = \frac{\cancel{Q}}{\frac{\cancel{Q}}{4 \pi} \left[\frac{1}{\epsilon_1} \left(\frac{1}{R_1} - \frac{1}{r_1}\right) + \frac{1}{\epsilon_2} \left( \frac{1}{r_1} - \frac{1}{r_2} \right) \right]}. \]
+
+\vspace{\baselineskip}
+
+\[ \textcolor{purple}{\boxed{ C = \frac{ 4 \pi }{\frac{1}{\epsilon_1} \left(\frac{1}{R_1} - \frac{1}{r_1}\right) + \frac{1}{\epsilon_2} \left( \frac{1}{r_1} - \frac{1}{r_2} \right) }.}} \]
+
+\subsection{Potencial y Capacidad.}
+
+\[ \textcolor{blue}{\boxed{\triangle V = \frac{Q}{4 \pi} \left[\frac{1}{\epsilon_1} \left(\frac{1}{R_1} - \frac{1}{r_1}\right) + \frac{1}{\epsilon_2} \left( \frac{1}{r_1} - \frac{1}{r_2} \right) \right]}} \]
+
+\vspace{\baselineskip}
+
+\[ \textcolor{blue}{\boxed{C = \frac{ 4 \pi }{\frac{1}{\epsilon_1} \left(\frac{1}{R_1} - \frac{1}{r_1}\right) + \frac{1}{\epsilon_2} \left( \frac{1}{r_1} - \frac{1}{r_2} \right) }}}  \]
+
+\section{Ejercicio 9.}
+
+\begin{justify}
+	Tenemos una cavidad esférica de radio \(\mathrm{R}\). En su centro se coloca una carga \(q\). La esfera se encuentra en un medio material de constante dieléctrica \(\epsilon\). Calcula el campo \(\mathrm{E}\) y \(\mathrm{D}\) en el interior de la cavidad \((r<R)\) y en el dieléctrico \((r>R)\).
+\end{justify}
+
+\begin{figure}[H]
+	\centering
+	\includegraphics[width=0.5 \textwidth]{figura11.jpg}
+\end{figure}
+
+
+\begin{justify}
+	\begin{itemize}
+		\item Para el ejercicio anterior, calcula el valor de la carga total de polarización en la superficie de la cavidad.
+	\end{itemize}
+\end{justify}
+
+
+\subsection{Datos.}
+
+\begin{justify}
+	\begin{itemize}
+		\item Fuera de la cavidad \(  r > R  \) el espacio está lleno de un diaeléctrico lineal, homogéneo e inifinito de constante \(\epsilon_0\)
+
+		\item Cavidad \(  r < R  \) está vacío.
+	\end{itemize}
+\end{justify}
+
+
+\subsection{Ley de Gauss.}
+
+\begin{justify}
+	Aplicamos la ley de Gauss para el desplazamiento. Cabe resaltar que la carga en el centro presenta una simetría en la esfera.
+\end{justify}
+
+\[ \oint \vec{D} \cdot d\vec{S} = Q_{int}. \]
+
+\begin{justify}
+	Por lo tanto para \( r > 0 \)
+\end{justify}
+
+\[ \mathrm{D}r \left(4 \pi r^2 \right) = q \;\; \Rightarrow \;\; Dr = \frac{q}{4 \pi r^2}. \]
+
+\[ \vec{D} = \frac{Q}{4 \pi r^2}\hat{r}. \]
+
+
+\subsection{Campo Eléctrico.}
+
+\begin{justify}
+	Dieléctrico lineal \(\vec{D} = \epsilon \vec{E} \), pero \(\epsilon\) depende de la región.
+\end{justify}
+
+\begin{justify}
+	\begin{itemize}
+		\item Dentro de la cavidad, medio vacío. \(r < R \).
+
+		      \[ \textcolor{purple}{\boxed{\vec{E}_{int} = \frac{\vec{D}}{\epsilon_0} = \frac{q}{4 \pi \epsilon_0 r^2}\hat{r}.}} \]
+
+		\item Fuera de la cavidad, medio eléctrico. \( r > R \).
+
+		      \[ \textcolor{purple}{\boxed{\vec{E}_{ext} = \frac{\vec{D}}{\epsilon} = \frac{q}{4 \pi \epsilon r^2}\hat{r}.}} \]
+	\end{itemize}
+\end{justify}
+
+\subsection{Polarización.}
+
+\begin{justify}
+	En \(r = R\) la normal \(\hat{n}\) desde el dieléctrico hacia la cavidad apunta en dirección \(- \hat{r}\).
+\end{justify}
+
+\[ \sigma_p = \vec{P} \cdot \hat{n}. \]
+
+\begin{justify}
+	Donde \(\vec{P}\) es el vector de polarización en el dieléctrico y \(\hat{n}\) la normal saliente del dieléctrico.
+\end{justify}
+
+
+\begin{justify}
+	\textbf{Polarización} \(\vec{P}\) \textbf{en el dieléctrico} \(r > R.\)
+\end{justify}
+
+\[ \vec{P} = \vec{D} - \epsilon_0 \vec{E}_{ext}.  \]
+
+\[ \vec{P} = \frac{q}{4 \pi r^2} \hat{r} - \epsilon_0 \cdot \frac{q}{4 \pi \epsilon r^2} \hat{r}. \]
+
+\begin{justify}
+	Como \(\epsilon = \epsilon_0\) donde \(\epsilon_r \frac{\epsilon}{\epsilon_0}. \)
+\end{justify}
+
+\[ \vec{P} = \frac{q}{4 \pi r^2} \left( 1 - \frac{\epsilon_0}{\epsilon}\right) \hat{r}. \]
+
+\vspace{\baselineskip}
+
+\[ \vec{P} = \frac{q}{4 \pi r^2} \left( 1 - \frac{1}{\epsilon_r}\right) \hat{r}. \]
+
+\begin{justify}
+	En \(r = R^{+}\) el lado dieléctrico en la interfaz.
+\end{justify}
+
+\[ \vec{P}\left(R^+\right) = \frac{q}{4\pi R^2} \, \left(1 - \frac{1}{\epsilon_r}\right) \hat{r}. \]
+
+\begin{justify}
+	Carga de polarización \(r = R\).
+\end{justify}
+
+\[ \sigma_p = \vec{P}\left(R^+\right) \cdot \hat{n}. \]
+
+\begin{justify}
+	Con \(\hat{n} = -\hat{r}\).
+\end{justify}
+
+\[ \sigma_p = \frac{q}{4 \pi R^2}\left(1 - \frac{1}{\epsilon_r}\right) \cdot \left(-1\right). \]
+
+\vspace{\baselineskip}
+
+\[ \sigma_p = - \frac{q}{4 \pi R^2}\left(1 - \frac{1}{\epsilon_r}\right). \]
+
+\begin{justify}
+	Haremos el producto de \( \sigma_p \cdot A\) donde \(\mathrm{A}\) representa la superficie.
+\end{justify}
+
+\[ \sigma_p \cdot A = - \frac{q}{ \cancel{4 \pi R^2}}\left(1 - \frac{1}{\epsilon_r}\right) \cdot \left(\cancel{4 \pi R^2}\right) \]
+
+\vspace{\baselineskip}
+
+\[\textcolor{purple}{\boxed{ Q_p = - q \left(1 \frac{1}{\epsilon_r}\right).}}\]
+
+
+\subsection{Campos, desplazamientos y polarización.}
+
+\begin{justify}
+	\begin{itemize}
+		\item Para \(\mathbf{r < R}\) dentro de la cavidad.
+	\end{itemize}
+\end{justify}
+
+\begin{multicols}{2}
+	\[ \textcolor{blue}{\boxed{D\left(r\right) = \frac{q}{4 \pi r^2}\hat{r}.}} \]
+
+	\[ \textcolor{blue}{\boxed{E\left(r\right) = \frac{q}{4 \pi \epsilon_0 r^2}\hat{r}.}} \]
+\end{multicols}
+
+
+\begin{justify}
+	\begin{itemize}
+		\item Para \(r > R \) en el dieléctrico
+	\end{itemize}
+\end{justify}
+
+\begin{multicols}{2}
+	\[ \textcolor{blue}{\boxed{D\left(r\right) = \frac{q}{4 \pi r^2}\hat{r}.}} \]
+
+	\[ \textcolor{blue}{\boxed{E\left(r\right) = \frac{q}{4 \pi \epsilon r^2}\hat{r}.}} \]
+\end{multicols}
+
+\begin{justify}
+	\begin{itemize}
+		\item Carga total de polarización \(r = R\)
+	\end{itemize}
+\end{justify}
+
+\[ \textcolor{blue}{\boxed{Q_p = - q \left(- \frac{1}{e_r}\right).}} \]
+
+\section{Revisión.}
+
+\begin{figure}[H]
+	\centering
+	\includegraphics[width=1 \textwidth]{revision.jpg}
+\end{figure}
+
+
+\end{document}
