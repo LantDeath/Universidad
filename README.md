@@ -1,4 +1,6 @@
-# Universidad
-Documentos que no quiero perder :P
+# Universidad.
 
-Con probablemente muchos errores de los cuales quiero aprender a medida que voy cursando la carrera :D.
+## Repositorio de asignaturas.
+
+En este repositorio pondré mi curva de aprendizaje respecto a la carrera de física, con, naturalmente muchos errores.
+Este repositorio es un atisbo al fruto de mi esfuerzo, mis errores y mi recorrido.
