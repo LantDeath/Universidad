@@ -1,0 +1,16 @@
+\babel@toc {spanish}{}\relax 
+\contentsline {section}{\numberline {1}Grandes científicos de la geometría y astronomía.}{3}{section.1}%
+\contentsline {section}{\numberline {2}Astrónomos.}{3}{section.2}%
+\contentsline {subsection}{\numberline {2.1}Eudoxo de Cnido (c. 408 a. C. – c. 355 a. C.) }{3}{subsection.2.1}%
+\contentsline {subsection}{\numberline {2.2} Aristarco de Samos (c. 310 a.C. -- c. 230 a.C.)}{4}{subsection.2.2}%
+\contentsline {subsection}{\numberline {2.3} Hiparco de Nicea (c. 190 a.C. -- c. 120 a.C.)}{4}{subsection.2.3}%
+\contentsline {subsection}{\numberline {2.4} Claudio Ptolomeo (c. 100 d.C. -- c. 170 d.C.)}{5}{subsection.2.4}%
+\contentsline {subsection}{\numberline {2.5} Nicolás Copérnico (1473 -- 1543)}{5}{subsection.2.5}%
+\contentsline {section}{\numberline {3}Geómetras.}{6}{section.3}%
+\contentsline {subsection}{\numberline {3.1}Tales de Mileto (c. 624 a.C. -- c. 546 a.C.)}{6}{subsection.3.1}%
+\contentsline {subsection}{\numberline {3.2}Pitágoras (c. 569 a.C. -- c. 475 a.C.)}{6}{subsection.3.2}%
+\contentsline {subsection}{\numberline {3.3}Euclides (c. 325 a.C. -- c. 265 a.C.)}{7}{subsection.3.3}%
+\contentsline {subsection}{\numberline {3.4}Eratóstenes (c. 276 a. C. – c. 194 a. C.)}{7}{subsection.3.4}%
+\contentsline {subsection}{\numberline {3.5}Apolonio de Perge (c. 262 a.C. -- c. 190 a.C.)}{7}{subsection.3.5}%
+\contentsline {section}{\numberline {4}Bibliografía.}{8}{section.4}%
+\contentsline {section}{\numberline {5}Revisión.}{9}{section.5}%

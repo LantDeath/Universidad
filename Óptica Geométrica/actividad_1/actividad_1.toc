@@ -1,0 +1,50 @@
+\babel@toc {spanish}{}\relax 
+\contentsline {section}{\numberline {1}Tubo de vidrio lleno de acetaldehído.}{4}{section.1}%
+\contentsline {subsection}{\numberline {1.1}Distancia focal objeto.}{4}{subsection.1.1}%
+\contentsline {subsection}{\numberline {1.2}Distancia focal imagen.}{5}{subsection.1.2}%
+\contentsline {subsection}{\numberline {1.3}Objeto a un metro.}{5}{subsection.1.3}%
+\contentsline {subsection}{\numberline {1.4}Objeto a sesenta metros.}{6}{subsection.1.4}%
+\contentsline {subsection}{\numberline {1.5}¿Cómo son las imágenes?}{6}{subsection.1.5}%
+\contentsline {section}{\numberline {2}Esfera de vidrio inmersa en el agua.}{7}{section.2}%
+\contentsline {subsection}{\numberline {2.1}Posición de la imagen.}{7}{subsection.2.1}%
+\contentsline {subsection}{\numberline {2.2}Aumento lateral.}{7}{subsection.2.2}%
+\contentsline {subsection}{\numberline {2.3}Naturaleza de la imagen.}{7}{subsection.2.3}%
+\contentsline {section}{\numberline {3}Espejo convexo.}{8}{section.3}%
+\contentsline {subsection}{\numberline {3.1}Distancia focal objeto e imagen (Espejo convexo).}{8}{subsection.3.1}%
+\contentsline {subsection}{\numberline {3.2}Posición del objeto (Espejo convexo).}{9}{subsection.3.2}%
+\contentsline {subsection}{\numberline {3.3}Distancia focal objeto e imagen (Espejo cóncavo.)}{9}{subsection.3.3}%
+\contentsline {subsection}{\numberline {3.4}Posición del objeto (Espejo cóncavo).}{9}{subsection.3.4}%
+\contentsline {subsection}{\numberline {3.5}Naturaleza de la imagen.}{10}{subsection.3.5}%
+\contentsline {section}{\numberline {4}Cristalino visual.}{10}{section.4}%
+\contentsline {subsection}{\numberline {4.1}Objeto en el infinito.}{11}{subsection.4.1}%
+\contentsline {subsection}{\numberline {4.2}Objeto a veinticinco centímetros.}{12}{subsection.4.2}%
+\contentsline {section}{\numberline {5}Lente convergente.}{12}{section.5}%
+\contentsline {subsection}{\numberline {5.1}Posición para una imagen cinco veces mayor.}{13}{subsection.5.1}%
+\contentsline {subsection}{\numberline {5.2}Potencia para una imagen con el doble de altura.}{14}{subsection.5.2}%
+\contentsline {section}{\numberline {6}Lente gruesa.}{15}{section.6}%
+\contentsline {subsection}{\numberline {6.1}Distancia focal.}{15}{subsection.6.1}%
+\contentsline {subsection}{\numberline {6.2}Potencia de la lente.}{15}{subsection.6.2}%
+\contentsline {subsection}{\numberline {6.3}Planos principales primario y secundario.}{16}{subsection.6.3}%
+\contentsline {subsection}{\numberline {6.4}Posición de los focos}{16}{subsection.6.4}%
+\contentsline {subsection}{\numberline {6.5}¿Es posible una potencia negativa?}{17}{subsection.6.5}%
+\contentsline {section}{\numberline {7}Prisma de vidrio.}{17}{section.7}%
+\contentsline {subsection}{\numberline {7.1}Obtención de los ángulos.}{18}{subsection.7.1}%
+\contentsline {subsection}{\numberline {7.2}Ángulo de incidencia en AC.}{20}{subsection.7.2}%
+\contentsline {subsection}{\numberline {7.3}Desviación angular.}{21}{subsection.7.3}%
+\contentsline {subsection}{\numberline {7.4}Trayectoria del rayo sin el material reflectante en el prisma.}{21}{subsection.7.4}%
+\contentsline {section}{\numberline {8}Menisco positivo.}{21}{section.8}%
+\contentsline {subsection}{\numberline {8.1}Potencia y distancia focal del sistema.}{22}{subsection.8.1}%
+\contentsline {subsection}{\numberline {8.2}Potencia del sistema con cinco centímetros de separación.}{23}{subsection.8.2}%
+\contentsline {subsection}{\numberline {8.3}Distancia focal del sistema.}{23}{subsection.8.3}%
+\contentsline {subsection}{\numberline {8.4}Espesor para potencia equivalente negativa.}{23}{subsection.8.4}%
+\contentsline {section}{\numberline {9}Dos lentes gruesas.}{24}{section.9}%
+\contentsline {subsection}{\numberline {9.1}Potencia equivalente de cada lente.}{24}{subsection.9.1}%
+\contentsline {subsection}{\numberline {9.2}Planos principales de cada lente.}{25}{subsection.9.2}%
+\contentsline {subsection}{\numberline {9.3}Potencia equivalente del sistema óptico compuesto.}{26}{subsection.9.3}%
+\contentsline {subsection}{\numberline {9.4}Posición respecto al polo posterior de la segunda lente.}{26}{subsection.9.4}%
+\contentsline {subsection}{\numberline {9.5}Aumento lateral.}{27}{subsection.9.5}%
+\contentsline {section}{\numberline {10}Matriz ABCD de las lentes gruesas.}{27}{section.10}%
+\contentsline {subsection}{\numberline {10.1}Matriz de tranferencia lente biconvexa.}{28}{subsection.10.1}%
+\contentsline {subsection}{\numberline {10.2}Matriz de tranferencia lente bicóncava.}{28}{subsection.10.2}%
+\contentsline {subsection}{\numberline {10.3}Potencias a partir de la matriz ABCD.}{28}{subsection.10.3}%
+\contentsline {section}{\numberline {11}Revisión.}{29}{section.11}%
